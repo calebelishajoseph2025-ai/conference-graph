@@ -181,9 +181,29 @@ class EmbeddedCursor:
 
     def execute(self, sql: str, params: Any = None):
         params = params or {}
-        # Adapt Oracle parameter names if passed as dict
         clean_sql = sql.strip()
-        # Handle Oracle DUAL in uppercase/lowercase
+
+        # Emulate Oracle trg_no_self_review trigger on PAPER_REVIEWER insert
+        if "INSERT INTO PAPER_REVIEWER" in clean_sql.upper():
+            p_id = params[0] if isinstance(params, (list, tuple)) else params.get("paperId", params.get("1"))
+            r_id = params[1] if isinstance(params, (list, tuple)) else params.get("reviewerId", params.get("2"))
+            self._cur.execute(
+                """
+                SELECT COUNT(*)
+                FROM PAPER_AUTHOR pa
+                JOIN AUTHOR a ON pa.AuthorID = a.AuthorID
+                JOIN REVIEWER rv ON LOWER(rv.Email) = LOWER(a.Email)
+                WHERE pa.PaperID = :p AND rv.ReviewerID = :r
+                """,
+                {"p": p_id, "r": r_id},
+            )
+            if self._cur.fetchone()[0] > 0:
+                raise Exception("ORA-20002: Reviewer is a co-author of this paper (triggered by trg_no_self_review).")
+
+            clean_sql = clean_sql.replace("SYSDATE", "date('now')")
+            if isinstance(params, (list, tuple)):
+                clean_sql = clean_sql.replace(":1", "?").replace(":2", "?")
+
         res = self._cur.execute(clean_sql, params)
         self.description = self._cur.description
         return res

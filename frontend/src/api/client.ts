@@ -15,7 +15,11 @@ export interface ApiResult<T> {
   meta: Record<string, unknown> | null;
 }
 
-const RAW_API_URL = ((import.meta.env.VITE_API_URL as string | undefined) ?? '').replace(/\/$/, '');
+const DEFAULT_REMOTE_URL = 'https://conference-graph-api.onrender.com';
+const RAW_API_URL = (
+  (import.meta.env.VITE_API_URL as string | undefined) ??
+  (import.meta.env.PROD ? DEFAULT_REMOTE_URL : '')
+).replace(/\/$/, '');
 const BASE = RAW_API_URL ? `${RAW_API_URL}/api` : '/api';
 const BACKEND_DISPLAY_URL = RAW_API_URL || 'http://127.0.0.1:8000';
 const TIMEOUT_MS = 15000;

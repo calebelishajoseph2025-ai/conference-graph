@@ -1,0 +1,67 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{ts,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        bg: 'rgb(var(--bg) / <alpha-value>)',
+        surface: 'rgb(var(--surface) / <alpha-value>)',
+        'surface-2': 'rgb(var(--surface-2) / <alpha-value>)',
+        'surface-3': 'rgb(var(--surface-3) / <alpha-value>)',
+        overlay: 'rgb(var(--overlay) / <alpha-value>)',
+        line: 'rgb(var(--border) / <alpha-value>)',
+        'line-strong': 'rgb(var(--border-strong) / <alpha-value>)',
+        ink: 'rgb(var(--text) / <alpha-value>)',
+        muted: 'rgb(var(--text-muted) / <alpha-value>)',
+        faint: 'rgb(var(--text-faint) / <alpha-value>)',
+        accent: 'rgb(var(--accent) / <alpha-value>)',
+        'accent-text': 'rgb(var(--accent-text) / <alpha-value>)',
+        ok: 'rgb(var(--ok) / <alpha-value>)',
+        warn: 'rgb(var(--warn) / <alpha-value>)',
+        bad: 'rgb(var(--bad) / <alpha-value>)',
+      },
+      fontFamily: {
+        sans: ['Geist Variable', 'system-ui', 'sans-serif'],
+        mono: ['Geist Mono Variable', 'ui-monospace', 'monospace'],
+      },
+      borderRadius: {
+        sm: '6px',
+        md: '10px',
+        lg: '14px',
+        xl: '22px',
+      },
+      fontSize: {
+        body: '15px',
+        small: '13px',
+        caption: '12px',
+        h1: '36px',
+        h2: '26px',
+        h3: '18px',
+      },
+      transitionDuration: {
+        fast: '120ms',
+        base: '200ms',
+        slow: '600ms',
+      },
+      maxWidth: { content: '1280px' },
+      transitionTimingFunction: { out: 'cubic-bezier(.2,.8,.2,1)' },
+      keyframes: {
+        draw: { to: { 'stroke-dashoffset': '0' } },
+        'reveal-line': { from: { transform: 'translateY(110%)' }, to: { transform: 'translateY(0)' } },
+        'sheet-in': { from: { opacity: '0', transform: 'translateY(8px)' }, to: { opacity: '1', transform: 'translateY(0)' } },
+        'toast-in': { from: { opacity: '0', transform: 'translateY(10px)' }, to: { opacity: '1', transform: 'translateY(0)' } },
+        shimmer: { from: { backgroundPosition: '-200% 0' }, to: { backgroundPosition: '200% 0' } },
+        spin: { to: { transform: 'rotate(360deg)' } },
+      },
+      animation: {
+        draw: 'draw 700ms cubic-bezier(.2,.8,.2,1) forwards',
+        'reveal-line': 'reveal-line 600ms cubic-bezier(.2,.8,.2,1) forwards',
+        'sheet-in': 'sheet-in 200ms cubic-bezier(.2,.8,.2,1)',
+        'toast-in': 'toast-in 200ms cubic-bezier(.2,.8,.2,1)',
+        shimmer: 'shimmer 1.6s linear infinite',
+        spin: 'spin 700ms linear infinite',
+      },
+    },
+  },
+  plugins: [],
+};

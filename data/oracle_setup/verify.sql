@@ -1,0 +1,28 @@
+-- Run as ACADEMIC after 01_schema.sql and oracle_load.sql
+SET SERVEROUTPUT ON
+SET LINESIZE 140
+PROMPT === Compile errors (expect: no rows selected) ===
+SELECT name, type, line, text FROM user_errors;
+PROMPT === Invalid objects (expect: no rows selected) ===
+SELECT object_name, object_type FROM user_objects WHERE status <> 'VALID';
+PROMPT === Row counts (expect 5,17,40,150,45,110,313,283,249,110,28,303,49) ===
+SELECT 'CONFERENCE' t, COUNT(*) n FROM CONFERENCE UNION ALL
+SELECT 'TRACK', COUNT(*) FROM TRACK UNION ALL
+SELECT 'SESSION_TBL', COUNT(*) FROM SESSION_TBL UNION ALL
+SELECT 'AUTHOR', COUNT(*) FROM AUTHOR UNION ALL
+SELECT 'REVIEWER', COUNT(*) FROM REVIEWER UNION ALL
+SELECT 'PAPER', COUNT(*) FROM PAPER UNION ALL
+SELECT 'PAPER_AUTHOR', COUNT(*) FROM PAPER_AUTHOR UNION ALL
+SELECT 'PAPER_REVIEWER', COUNT(*) FROM PAPER_REVIEWER UNION ALL
+SELECT 'REVIEW', COUNT(*) FROM REVIEW UNION ALL
+SELECT 'SUBMISSION', COUNT(*) FROM SUBMISSION UNION ALL
+SELECT 'KEYWORD', COUNT(*) FROM KEYWORD UNION ALL
+SELECT 'PAPER_KEYWORD', COUNT(*) FROM PAPER_KEYWORD UNION ALL
+SELECT 'PRESENTATION', COUNT(*) FROM PRESENTATION;
+PROMPT === Paper status (expect Accepted 49, Rejected 41, Under Review 16, Submitted 4) ===
+SELECT Status, COUNT(*) FROM PAPER GROUP BY Status ORDER BY Status;
+PROMPT === Procedure test: must FAIL with ORA-20001 (conflict of interest, pair from da3_coi_test_pairs.csv) ===
+EXEC sp_assign_reviewer(1,2);
+PROMPT === Trigger test: a direct insert must FAIL with ORA-20002 ===
+INSERT INTO PAPER_REVIEWER (PaperID, ReviewerID) VALUES (1,2);
+ROLLBACK;

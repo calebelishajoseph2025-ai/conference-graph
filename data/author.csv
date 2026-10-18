@@ -1,0 +1,151 @@
+AuthorID,Name,Affiliation,Email,Country
+1,Emma Krishnan,IIT Madras,emma.krishnan@iit.ac.in,India
+2,Deepa Smith,NIT Trichy,deepa.smith@nit.ac.in,India
+3,Vikram Patel,University of Tokyo,vikram.patel@university.ac.jp,Japan
+4,Sofia Sharma,ETH Zurich,sofia.sharma@eth.ch,Switzerland
+5,Hiroshi Menon,IIT Madras,hiroshi.menon@iit.ac.in,India
+6,Divya Rao,NIT Trichy,divya.rao@nit.ac.in,India
+7,Anna Nair,Oxford University,anna.nair@oxford.ac.uk,UK
+8,Rohan Wang,NIT Trichy,rohan.wang@nit.ac.in,India
+9,Yuki Zhang,IIT Madras,yuki.zhang@iit.ac.in,India
+10,Suresh Liu,MIT,suresh.liu@mit.edu,USA
+11,Deepa Subramanian,Anna University,deepa.subramanian@anna.ac.in,India
+12,David Patel,IIT Bombay,david.patel@iit.ac.in,India
+13,Sarah Patel,Stanford University,sarah.patel@stanford.edu,USA
+14,Elena Petrova,IIT Delhi,elena.petrova@iit.ac.in,India
+15,Min-jun Krishnan,CMU,minjun.krishnan@cmu.edu,USA
+16,Divya Lee,Tsinghua University,divya.lee@tsinghua.edu.cn,China
+17,Noah Rossi,ETH Zurich,noah.rossi@eth.ch,Switzerland
+18,Rohan Reddy,IIT Delhi,rohan.reddy@iit.ac.in,India
+19,Olivia Pillai,IIT Kharagpur,olivia.pillai@iit.ac.in,India
+20,Ravi Sharma,NIT Trichy,ravi.sharma@nit.ac.in,India
+21,Rahul Khan,BITS Pilani,rahul.khan@bits.ac.in,India
+22,Min-jun Rossi,VIT Vellore,minjun.rossi@vit.ac.in,India
+23,John Dubois,Anna University,john.dubois@anna.ac.in,India
+24,Olivia Zhang,KAIST,olivia.zhang@kaist.ac.kr,South Korea
+25,Liam Reddy,TU Munich,liam.reddy@tu.de,Germany
+26,Emma Das,Oxford University,emma.das@oxford.ac.uk,UK
+27,Kavya Das,University of Toronto,kavya.das@university.ca,Canada
+28,Sarah Zhang,Tsinghua University,sarah.zhang@tsinghua.edu.cn,China
+29,Omar Pillai,University of Tokyo,omar.pillai@university.ac.jp,Japan
+30,Alice Iyer,NIT Trichy,alice.iyer@nit.ac.in,India
+31,Arjun Kim,CMU,arjun.kim@cmu.edu,USA
+32,Deepa Reddy,Anna University,deepa.reddy@anna.ac.in,India
+33,Fatima Kim,Anna University,fatima.kim@anna.ac.in,India
+34,Liam Taylor,CMU,liam.taylor@cmu.edu,USA
+35,Liam Brown,VIT Chennai,liam.brown@vit.ac.in,India
+36,Manish Raman,NIT Trichy,manish.raman@nit.ac.in,India
+37,Omar Petrova,University of Melbourne,omar.petrova@university.edu.au,Australia
+38,Chen Liu,ETH Zurich,chen.liu@eth.ch,Switzerland
+39,Wei Rossi,NIT Trichy,wei.rossi@nit.ac.in,India
+40,Vikram Anderson,NUS Singapore,vikram.anderson@nus.edu.sg,Singapore
+41,Divya Iyer,IISc Bangalore,divya.iyer@iisc.ac.in,India
+42,Meera Das,University of Tokyo,meera.das@university.ac.jp,Japan
+43,Hiroshi Reddy,CMU,hiroshi.reddy@cmu.edu,USA
+44,Sarah Brown,NTU Singapore,sarah.brown@ntu.edu.sg,Singapore
+45,Manish Kumar,University of Tokyo,manish.kumar@university.ac.jp,Japan
+46,Priya Zhang,IIT Kharagpur,priya.zhang@iit.ac.in,India
+47,Liam Mueller,IISc Bangalore,liam.mueller@iisc.ac.in,India
+48,Ravi Liu,VIT Vellore,ravi.liu@vit.ac.in,India
+49,Min-jun Kumar,University of Melbourne,minjun.kumar@university.edu.au,Australia
+50,Manish Anderson,IIT Kharagpur,manish.anderson@iit.ac.in,India
+51,Lakshmi Anderson,IISc Bangalore,lakshmi.anderson@iisc.ac.in,India
+52,Emma Tanaka,Tsinghua University,emma.tanaka@tsinghua.edu.cn,China
+53,Anna Singh,VIT Chennai,anna.singh@vit.ac.in,India
+54,John Das,Oxford University,john.das@oxford.ac.uk,UK
+55,Pierre Kumar,TU Munich,pierre.kumar@tu.de,Germany
+56,Alice Taylor,IIT Madras,alice.taylor@iit.ac.in,India
+57,Priya Rossi,IIIT Hyderabad,priya.rossi@iiit.ac.in,India
+58,Kavya Iyer,NIT Trichy,kavya.iyer@nit.ac.in,India
+59,Fatima Sharma,IIT Bombay,fatima.sharma@iit.ac.in,India
+60,Lukas Reddy,IIT Kharagpur,lukas.reddy@iit.ac.in,India
+61,Sofia Raman,VIT Chennai,sofia.raman@vit.ac.in,India
+62,Olivia Wilson,Oxford University,olivia.wilson@oxford.ac.uk,UK
+63,Suresh Petrova,NTU Singapore,suresh.petrova@ntu.edu.sg,Singapore
+64,Mei Liu,Anna University,mei.liu@anna.ac.in,India
+65,Sofia Singh,KAIST,sofia.singh@kaist.ac.kr,South Korea
+66,Nisha Ali,University of Tokyo,nisha.ali@university.ac.jp,Japan
+67,Liam Rossi,University of Toronto,liam.rossi@university.ca,Canada
+68,Pierre Chen,IISc Bangalore,pierre.chen@iisc.ac.in,India
+69,Kavya Pillai,IIT Bombay,kavya.pillai@iit.ac.in,India
+70,David Nair,ETH Zurich,david.nair@eth.ch,Switzerland
+71,Chen Pillai,IIT Madras,chen.pillai@iit.ac.in,India
+72,Karthik Iyer,NIT Trichy,karthik.iyer@nit.ac.in,India
+73,Karthik Menon,MIT,karthik.menon@mit.edu,USA
+74,Karthik Anderson,NIT Trichy,karthik.anderson@nit.ac.in,India
+75,Deepa Taylor,Anna University,deepa.taylor@anna.ac.in,India
+76,Fatima Wilson,NIT Trichy,fatima.wilson@nit.ac.in,India
+77,Soo-ah Wang,Anna University,sooah.wang@anna.ac.in,India
+78,Rahul Patel,University of Tokyo,rahul.patel@university.ac.jp,Japan
+79,Hiroshi Dubois,UC Berkeley,hiroshi.dubois@uc.edu,USA
+80,Li Brown,University of Melbourne,li.brown@university.edu.au,Australia
+81,Ananya Patel,IIT Delhi,ananya.patel@iit.ac.in,India
+82,Wei Mueller,IISc Bangalore,wei.mueller@iisc.ac.in,India
+83,Kavya Singh,Anna University,kavya.singh@anna.ac.in,India
+84,Sofia Chen,VIT Chennai,sofia.chen@vit.ac.in,India
+85,Hiroshi Gupta,BITS Pilani,hiroshi.gupta@bits.ac.in,India
+86,Min-jun Smith,IIT Bombay,minjun.smith@iit.ac.in,India
+87,Yuki Patel,IIT Delhi,yuki.patel@iit.ac.in,India
+88,Liam Kumar,IIT Bombay,liam.kumar@iit.ac.in,India
+89,Li Taylor,NUS Singapore,li.taylor@nus.edu.sg,Singapore
+90,Sneha Ali,IIT Delhi,sneha.ali@iit.ac.in,India
+91,Suresh Khan,IIT Madras,suresh.khan@iit.ac.in,India
+92,Sarah Petrova,University of Toronto,sarah.petrova@university.ca,Canada
+93,Omar Taylor,VIT Chennai,omar.taylor@vit.ac.in,India
+94,Rohan Lee,Anna University,rohan.lee@anna.ac.in,India
+95,Ananya Iyer,University of Melbourne,ananya.iyer@university.edu.au,Australia
+96,Ananya Wilson,NTU Singapore,ananya.wilson@ntu.edu.sg,Singapore
+97,Pierre Das,IIT Delhi,pierre.das@iit.ac.in,India
+98,Anna Sharma,VIT Vellore,anna.sharma@vit.ac.in,India
+99,Karthik Reddy,University of Tokyo,karthik.reddy@university.ac.jp,Japan
+100,Kavya Ali,IISc Bangalore,kavya.ali@iisc.ac.in,India
+101,Fatima Smith,ETH Zurich,fatima.smith@eth.ch,Switzerland
+102,Mei Menon,TU Munich,mei.menon@tu.de,Germany
+103,Divya Wang,University of Tokyo,divya.wang@university.ac.jp,Japan
+104,Chen Kim,BITS Pilani,chen.kim@bits.ac.in,India
+105,Sneha Kim,NIT Trichy,sneha.kim@nit.ac.in,India
+106,Manish Ali,VIT Chennai,manish.ali@vit.ac.in,India
+107,Olivia Tanaka,University of Toronto,olivia.tanaka@university.ca,Canada
+108,Alice Reddy,IIT Madras,alice.reddy@iit.ac.in,India
+109,Min-jun Patel,IIT Bombay,minjun.patel@iit.ac.in,India
+110,Sofia Rao,NTU Singapore,sofia.rao@ntu.edu.sg,Singapore
+111,Elena Reddy,NIT Trichy,elena.reddy@nit.ac.in,India
+112,John Lee,VIT Vellore,john.lee@vit.ac.in,India
+113,Yuki Tanaka,TU Munich,yuki.tanaka@tu.de,Germany
+114,Olivia Patel,VIT Chennai,olivia.patel@vit.ac.in,India
+115,Manish Krishnan,IISc Bangalore,manish.krishnan@iisc.ac.in,India
+116,Omar Subramanian,BITS Pilani,omar.subramanian@bits.ac.in,India
+117,Ravi Rao,KAIST,ravi.rao@kaist.ac.kr,South Korea
+118,David Rao,University of Tokyo,david.rao@university.ac.jp,Japan
+119,Emma Petrova,NTU Singapore,emma.petrova@ntu.edu.sg,Singapore
+120,Lukas Petrova,IIT Delhi,lukas.petrova@iit.ac.in,India
+121,Divya Liu,BITS Pilani,divya.liu@bits.ac.in,India
+122,Arjun Kumar,MIT,arjun.kumar@mit.edu,USA
+123,Vikram Petrova,VIT Vellore,vikram.petrova@vit.ac.in,India
+124,Yuki Liu,Oxford University,yuki.liu@oxford.ac.uk,UK
+125,Aarav Krishnan,IIT Bombay,aarav.krishnan@iit.ac.in,India
+126,Meera Menon,Stanford University,meera.menon@stanford.edu,USA
+127,Chen Subramanian,UC Berkeley,chen.subramanian@uc.edu,USA
+128,Vikram Menon,IIIT Hyderabad,vikram.menon@iiit.ac.in,India
+129,John Menon,Stanford University,john.menon@stanford.edu,USA
+130,Sneha Smith,University of Tokyo,sneha.smith@university.ac.jp,Japan
+131,Rahul Dubois,IIT Kharagpur,rahul.dubois@iit.ac.in,India
+132,Omar Wang,TU Munich,omar.wang@tu.de,Germany
+133,Meera Smith,VIT Vellore,meera.smith@vit.ac.in,India
+134,Lakshmi Wang,IIT Madras,lakshmi.wang@iit.ac.in,India
+135,Lakshmi Mueller,UC Berkeley,lakshmi.mueller@uc.edu,USA
+136,Olivia Smith,BITS Pilani,olivia.smith@bits.ac.in,India
+137,Suresh Patel,CMU,suresh.patel@cmu.edu,USA
+138,Arjun Wilson,NIT Trichy,arjun.wilson@nit.ac.in,India
+139,Rohan Brown,Stanford University,rohan.brown@stanford.edu,USA
+140,Nisha Pillai,NIT Trichy,nisha.pillai@nit.ac.in,India
+141,Aditi Singh,CMU,aditi.singh@cmu.edu,USA
+142,David Zhang,IIT Bombay,david.zhang@iit.ac.in,India
+143,Deepa Dubois,Tsinghua University,deepa.dubois@tsinghua.edu.cn,China
+144,Anna Ali,University of Tokyo,anna.ali@university.ac.jp,Japan
+145,Sofia Mueller,IIT Madras,sofia.mueller@iit.ac.in,India
+146,Priya Petrova,VIT Vellore,priya.petrova@vit.ac.in,India
+147,Chen Petrova,IIT Delhi,chen.petrova@iit.ac.in,India
+148,Rahul Liu,Stanford University,rahul.liu@stanford.edu,USA
+149,Alice Liu,TU Munich,alice.liu@tu.de,Germany
+150,Anna Krishnan,CMU,anna.krishnan@cmu.edu,USA

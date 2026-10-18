@@ -1,0 +1,1 @@
+{"demo":{"available":true},"scale":{"available":false,"reason":"Neo4j database 'scale' is populated, but Oracle user 'academic_scale' is not available. To enable Oracle scale benchmarks, run data/oracle_setup/02_create_scale_user.sql and 01_schema.sql, then python scripts/scale_seed.py --confirm.","neo4j_scale_db":"scale","oracle_scale_user":"academic_scale"}}

@@ -1,0 +1,250 @@
+ReviewID,PaperID,ReviewerID,Score,Comments,ReviewDate,Recommendation
+1,1,14,10,"Excellent contribution, clearly written and well evaluated.",2026-09-02,Accept
+2,1,43,9,"Excellent contribution, clearly written and well evaluated.",2026-09-14,Accept
+3,2,5,8,Solid methodology; a few presentation issues to fix.,2026-09-03,Accept
+4,3,33,10,"Excellent contribution, clearly written and well evaluated.",2026-09-20,Accept
+5,3,20,9,Strong results and a convincing evaluation. Strong accept.,2026-09-17,Accept
+6,4,11,8,"Good idea, needs a few more baselines.",2026-09-23,Accept
+7,4,29,3,Insufficient novelty and weak evaluation.,2026-09-14,Reject
+8,5,10,9,Strong results and a convincing evaluation. Strong accept.,2026-09-02,Accept
+9,5,6,9,Strong results and a convincing evaluation. Strong accept.,2026-08-24,Accept
+10,5,30,8,Solid methodology; a few presentation issues to fix.,2026-09-03,Accept
+11,6,33,8,Solid methodology; a few presentation issues to fix.,2026-09-07,Accept
+12,6,29,9,Strong results and a convincing evaluation. Strong accept.,2026-09-14,Accept
+13,7,22,6,Interesting but evaluation is limited.,2026-08-19,Major Revision
+14,7,9,8,Solid methodology; a few presentation issues to fix.,2026-09-01,Accept
+15,8,27,8,"Good idea, needs a few more baselines.",2026-09-18,Accept
+16,10,40,5,Needs clearer motivation and more experiments.,2026-09-20,Major Revision
+17,11,12,7,"Good idea, needs a few more baselines.",2026-08-23,Minor Revision
+18,11,37,8,"Good idea, needs a few more baselines.",2026-09-02,Accept
+19,11,40,8,"Good idea, needs a few more baselines.",2026-08-26,Accept
+20,12,18,4,Major flaws in the experimental setup.,2026-09-12,Reject
+21,12,42,6,Needs clearer motivation and more experiments.,2026-09-16,Major Revision
+22,14,39,5,Needs clearer motivation and more experiments.,2026-08-28,Major Revision
+23,14,32,4,Major flaws in the experimental setup.,2026-09-01,Reject
+24,15,31,5,Interesting but evaluation is limited.,2026-09-23,Major Revision
+25,15,38,6,Interesting but evaluation is limited.,2026-09-10,Major Revision
+26,15,34,4,Insufficient novelty and weak evaluation.,2026-09-18,Reject
+27,16,30,5,Needs clearer motivation and more experiments.,2026-09-20,Major Revision
+28,17,24,7,Solid methodology; a few presentation issues to fix.,2026-10-05,Minor Revision
+29,17,14,9,Strong results and a convincing evaluation. Strong accept.,2026-09-26,Accept
+30,18,32,7,Solid methodology; a few presentation issues to fix.,2026-10-06,Minor Revision
+31,18,15,5,Interesting but evaluation is limited.,2026-09-21,Major Revision
+32,18,18,6,Interesting but evaluation is limited.,2026-09-20,Major Revision
+33,19,33,5,Interesting but evaluation is limited.,2026-09-14,Major Revision
+34,19,14,7,Solid methodology; a few presentation issues to fix.,2026-09-22,Minor Revision
+35,20,43,7,Solid methodology; a few presentation issues to fix.,2026-09-17,Minor Revision
+36,21,14,10,Strong results and a convincing evaluation. Strong accept.,2026-10-03,Accept
+37,21,42,10,Strong results and a convincing evaluation. Strong accept.,2026-10-01,Accept
+38,22,17,6,Needs clearer motivation and more experiments.,2026-08-30,Major Revision
+39,23,26,10,"Excellent contribution, clearly written and well evaluated.",2026-10-05,Accept
+40,24,35,10,"Excellent contribution, clearly written and well evaluated.",2026-10-29,Accept
+41,25,37,5,Needs clearer motivation and more experiments.,2026-10-31,Major Revision
+42,26,17,8,"Good idea, needs a few more baselines.",2026-10-03,Accept
+43,27,43,5,Needs clearer motivation and more experiments.,2026-09-21,Major Revision
+44,28,23,8,"Good idea, needs a few more baselines.",2026-09-25,Accept
+45,28,29,5,Interesting but evaluation is limited.,2026-09-27,Major Revision
+46,29,43,10,"Excellent contribution, clearly written and well evaluated.",2026-10-03,Accept
+47,29,22,7,"Good idea, needs a few more baselines.",2026-09-30,Minor Revision
+48,30,23,5,Interesting but evaluation is limited.,2026-09-27,Major Revision
+49,30,29,7,Solid methodology; a few presentation issues to fix.,2026-09-22,Minor Revision
+50,30,9,7,"Good idea, needs a few more baselines.",2026-09-25,Minor Revision
+51,31,12,7,"Good idea, needs a few more baselines.",2026-09-19,Minor Revision
+52,31,32,7,"Good idea, needs a few more baselines.",2026-09-30,Minor Revision
+53,31,37,9,Strong results and a convincing evaluation. Strong accept.,2026-09-20,Accept
+54,32,22,5,Needs clearer motivation and more experiments.,2026-09-26,Major Revision
+55,32,6,5,Needs clearer motivation and more experiments.,2026-09-25,Major Revision
+56,32,34,6,Interesting but evaluation is limited.,2026-09-22,Major Revision
+57,33,36,8,Solid methodology; a few presentation issues to fix.,2026-10-18,Accept
+58,34,21,6,Interesting but evaluation is limited.,2026-09-24,Major Revision
+59,34,9,6,Interesting but evaluation is limited.,2026-09-27,Major Revision
+60,34,23,6,Interesting but evaluation is limited.,2026-09-22,Major Revision
+61,35,27,6,Needs clearer motivation and more experiments.,2026-09-27,Major Revision
+62,35,7,7,Solid methodology; a few presentation issues to fix.,2026-10-09,Minor Revision
+63,36,9,9,"Excellent contribution, clearly written and well evaluated.",2026-10-08,Accept
+64,36,39,9,"Excellent contribution, clearly written and well evaluated.",2026-10-06,Accept
+65,36,30,10,Strong results and a convincing evaluation. Strong accept.,2026-10-13,Accept
+66,37,14,6,Interesting but evaluation is limited.,2025-09-04,Major Revision
+67,37,10,7,"Good idea, needs a few more baselines.",2025-09-05,Minor Revision
+68,37,35,7,"Good idea, needs a few more baselines.",2025-09-03,Minor Revision
+69,38,11,5,Needs clearer motivation and more experiments.,2025-09-15,Major Revision
+70,38,17,6,Needs clearer motivation and more experiments.,2025-09-18,Major Revision
+71,38,43,7,"Good idea, needs a few more baselines.",2025-09-20,Minor Revision
+72,39,6,7,"Good idea, needs a few more baselines.",2025-08-30,Minor Revision
+73,39,10,9,"Excellent contribution, clearly written and well evaluated.",2025-09-07,Accept
+74,39,40,8,Solid methodology; a few presentation issues to fix.,2025-08-30,Accept
+75,40,9,8,"Good idea, needs a few more baselines.",2025-09-21,Accept
+76,40,7,7,Solid methodology; a few presentation issues to fix.,2025-09-16,Minor Revision
+77,40,22,9,Strong results and a convincing evaluation. Strong accept.,2025-09-17,Accept
+78,41,33,10,"Excellent contribution, clearly written and well evaluated.",2025-09-21,Accept
+79,41,34,8,"Good idea, needs a few more baselines.",2025-09-14,Accept
+80,41,6,9,"Excellent contribution, clearly written and well evaluated.",2025-09-22,Accept
+81,42,14,3,Insufficient novelty and weak evaluation.,2025-09-12,Reject
+82,42,1,5,Interesting but evaluation is limited.,2025-09-13,Major Revision
+83,43,22,5,Needs clearer motivation and more experiments.,2025-08-24,Major Revision
+84,43,36,8,"Good idea, needs a few more baselines.",2025-08-24,Accept
+85,44,12,9,"Excellent contribution, clearly written and well evaluated.",2025-09-04,Accept
+86,44,39,7,Solid methodology; a few presentation issues to fix.,2025-09-05,Minor Revision
+87,44,14,7,Solid methodology; a few presentation issues to fix.,2025-09-05,Minor Revision
+88,45,37,7,"Good idea, needs a few more baselines.",2025-09-16,Minor Revision
+89,45,9,7,Solid methodology; a few presentation issues to fix.,2025-09-06,Minor Revision
+90,45,26,7,"Good idea, needs a few more baselines.",2025-09-07,Minor Revision
+91,46,39,6,Needs clearer motivation and more experiments.,2025-09-08,Major Revision
+92,46,24,6,Needs clearer motivation and more experiments.,2025-09-11,Major Revision
+93,47,39,8,"Good idea, needs a few more baselines.",2025-09-23,Accept
+94,47,37,7,Solid methodology; a few presentation issues to fix.,2025-09-29,Minor Revision
+95,47,17,6,Interesting but evaluation is limited.,2025-09-29,Major Revision
+96,48,42,6,Interesting but evaluation is limited.,2025-08-22,Major Revision
+97,48,21,8,"Good idea, needs a few more baselines.",2025-09-05,Accept
+98,49,13,9,"Excellent contribution, clearly written and well evaluated.",2025-09-27,Accept
+99,49,38,6,Needs clearer motivation and more experiments.,2025-09-22,Major Revision
+100,49,8,10,Strong results and a convincing evaluation. Strong accept.,2025-09-25,Accept
+101,50,39,7,Solid methodology; a few presentation issues to fix.,2025-08-29,Minor Revision
+102,50,12,7,"Good idea, needs a few more baselines.",2025-09-09,Minor Revision
+103,50,19,5,Needs clearer motivation and more experiments.,2025-09-12,Major Revision
+104,51,14,7,Solid methodology; a few presentation issues to fix.,2025-08-30,Minor Revision
+105,51,6,6,Needs clearer motivation and more experiments.,2025-08-28,Major Revision
+106,51,9,6,Needs clearer motivation and more experiments.,2025-09-01,Major Revision
+107,52,4,7,Solid methodology; a few presentation issues to fix.,2025-09-08,Minor Revision
+108,52,34,7,Solid methodology; a few presentation issues to fix.,2025-09-09,Minor Revision
+109,53,28,5,Interesting but evaluation is limited.,2025-09-27,Major Revision
+110,53,32,5,Needs clearer motivation and more experiments.,2025-09-20,Major Revision
+111,54,5,8,"Good idea, needs a few more baselines.",2025-09-13,Accept
+112,54,26,8,Solid methodology; a few presentation issues to fix.,2025-09-16,Accept
+113,55,10,9,Strong results and a convincing evaluation. Strong accept.,2025-09-20,Accept
+114,55,8,9,"Excellent contribution, clearly written and well evaluated.",2025-09-29,Accept
+115,55,25,8,Solid methodology; a few presentation issues to fix.,2025-09-18,Accept
+116,56,32,6,Needs clearer motivation and more experiments.,2025-09-22,Major Revision
+117,56,15,5,Interesting but evaluation is limited.,2025-09-19,Major Revision
+118,56,43,6,Interesting but evaluation is limited.,2025-09-19,Major Revision
+119,57,15,6,Interesting but evaluation is limited.,2025-09-13,Major Revision
+120,57,39,3,Major flaws in the experimental setup.,2025-09-27,Reject
+121,58,12,5,Needs clearer motivation and more experiments.,2025-09-24,Major Revision
+122,58,20,4,Major flaws in the experimental setup.,2025-09-30,Reject
+123,59,22,7,Solid methodology; a few presentation issues to fix.,2025-09-07,Minor Revision
+124,59,10,7,Solid methodology; a few presentation issues to fix.,2025-08-31,Minor Revision
+125,59,40,8,Solid methodology; a few presentation issues to fix.,2025-09-04,Accept
+126,60,8,9,Strong results and a convincing evaluation. Strong accept.,2025-08-30,Accept
+127,60,14,10,Strong results and a convincing evaluation. Strong accept.,2025-08-25,Accept
+128,61,17,9,Strong results and a convincing evaluation. Strong accept.,2025-09-25,Accept
+129,61,11,7,Solid methodology; a few presentation issues to fix.,2025-09-17,Minor Revision
+130,61,13,8,"Good idea, needs a few more baselines.",2025-09-15,Accept
+131,62,14,6,Interesting but evaluation is limited.,2025-09-08,Major Revision
+132,62,8,5,Interesting but evaluation is limited.,2025-09-13,Major Revision
+133,62,17,6,Interesting but evaluation is limited.,2025-09-15,Major Revision
+134,63,9,5,Needs clearer motivation and more experiments.,2025-10-25,Major Revision
+135,63,37,6,Interesting but evaluation is limited.,2025-10-18,Major Revision
+136,63,39,6,Needs clearer motivation and more experiments.,2025-10-27,Major Revision
+137,64,37,6,Interesting but evaluation is limited.,2025-10-19,Major Revision
+138,64,9,8,"Good idea, needs a few more baselines.",2025-10-03,Accept
+139,64,33,7,"Good idea, needs a few more baselines.",2025-10-06,Minor Revision
+140,65,6,7,Solid methodology; a few presentation issues to fix.,2025-10-26,Minor Revision
+141,65,10,8,Solid methodology; a few presentation issues to fix.,2025-10-19,Accept
+142,66,22,8,"Good idea, needs a few more baselines.",2025-10-14,Accept
+143,66,19,7,Solid methodology; a few presentation issues to fix.,2025-10-22,Minor Revision
+144,67,24,7,Solid methodology; a few presentation issues to fix.,2025-10-20,Minor Revision
+145,67,1,7,"Good idea, needs a few more baselines.",2025-10-04,Minor Revision
+146,68,23,6,Interesting but evaluation is limited.,2025-09-22,Major Revision
+147,68,32,6,Interesting but evaluation is limited.,2025-09-27,Major Revision
+148,69,1,10,"Excellent contribution, clearly written and well evaluated.",2025-10-03,Accept
+149,69,23,8,"Good idea, needs a few more baselines.",2025-10-04,Accept
+150,69,35,8,"Good idea, needs a few more baselines.",2025-09-27,Accept
+151,70,42,5,Interesting but evaluation is limited.,2025-09-23,Major Revision
+152,70,24,6,Interesting but evaluation is limited.,2025-10-02,Major Revision
+153,70,39,6,Interesting but evaluation is limited.,2025-10-02,Major Revision
+154,71,24,6,Needs clearer motivation and more experiments.,2025-10-06,Major Revision
+155,71,10,7,"Good idea, needs a few more baselines.",2025-10-14,Minor Revision
+156,71,26,7,"Good idea, needs a few more baselines.",2025-09-29,Minor Revision
+157,72,27,4,Insufficient novelty and weak evaluation.,2025-10-01,Reject
+158,72,12,5,Needs clearer motivation and more experiments.,2025-10-10,Major Revision
+159,73,14,9,"Excellent contribution, clearly written and well evaluated.",2025-10-14,Accept
+160,73,24,10,"Excellent contribution, clearly written and well evaluated.",2025-10-15,Accept
+161,73,42,9,Strong results and a convincing evaluation. Strong accept.,2025-10-17,Accept
+162,74,1,8,Solid methodology; a few presentation issues to fix.,2025-10-16,Accept
+163,74,23,9,Strong results and a convincing evaluation. Strong accept.,2025-10-10,Accept
+164,74,22,7,Solid methodology; a few presentation issues to fix.,2025-10-06,Minor Revision
+165,75,23,10,"Excellent contribution, clearly written and well evaluated.",2025-09-26,Accept
+166,75,29,8,Solid methodology; a few presentation issues to fix.,2025-10-01,Accept
+167,75,38,10,"Excellent contribution, clearly written and well evaluated.",2025-09-27,Accept
+168,76,1,6,Needs clearer motivation and more experiments.,2025-09-18,Major Revision
+169,76,36,5,Interesting but evaluation is limited.,2025-09-17,Major Revision
+170,77,23,7,"Good idea, needs a few more baselines.",2025-10-08,Minor Revision
+171,77,38,8,"Good idea, needs a few more baselines.",2025-09-23,Accept
+172,78,24,4,Insufficient novelty and weak evaluation.,2025-10-11,Reject
+173,78,5,6,Interesting but evaluation is limited.,2025-10-09,Major Revision
+174,79,12,9,Strong results and a convincing evaluation. Strong accept.,2025-09-28,Accept
+175,79,32,7,"Good idea, needs a few more baselines.",2025-09-29,Minor Revision
+176,79,17,10,Strong results and a convincing evaluation. Strong accept.,2025-10-04,Accept
+177,80,27,5,Needs clearer motivation and more experiments.,2025-09-20,Major Revision
+178,80,22,5,Needs clearer motivation and more experiments.,2025-09-28,Major Revision
+179,81,5,5,Needs clearer motivation and more experiments.,2024-09-09,Major Revision
+180,81,20,5,Interesting but evaluation is limited.,2024-09-07,Major Revision
+181,81,6,7,"Good idea, needs a few more baselines.",2024-09-03,Minor Revision
+182,82,17,7,"Good idea, needs a few more baselines.",2024-09-01,Minor Revision
+183,82,20,6,Needs clearer motivation and more experiments.,2024-09-12,Major Revision
+184,82,30,5,Interesting but evaluation is limited.,2024-09-01,Major Revision
+185,83,6,6,Needs clearer motivation and more experiments.,2024-09-30,Major Revision
+186,83,26,4,Insufficient novelty and weak evaluation.,2024-10-06,Reject
+187,83,13,3,Major flaws in the experimental setup.,2024-10-06,Reject
+188,84,17,8,"Good idea, needs a few more baselines.",2024-09-13,Accept
+189,84,20,7,"Good idea, needs a few more baselines.",2024-09-18,Minor Revision
+190,84,9,6,Interesting but evaluation is limited.,2024-09-12,Major Revision
+191,85,26,6,Interesting but evaluation is limited.,2024-09-16,Major Revision
+192,85,35,5,Needs clearer motivation and more experiments.,2024-09-15,Major Revision
+193,86,4,5,Needs clearer motivation and more experiments.,2024-09-19,Major Revision
+194,86,41,4,Major flaws in the experimental setup.,2024-09-25,Reject
+195,86,39,5,Needs clearer motivation and more experiments.,2024-09-21,Major Revision
+196,87,22,5,Interesting but evaluation is limited.,2024-08-31,Major Revision
+197,87,2,5,Needs clearer motivation and more experiments.,2024-09-12,Major Revision
+198,88,6,6,Needs clearer motivation and more experiments.,2024-09-21,Major Revision
+199,88,4,6,Needs clearer motivation and more experiments.,2024-09-23,Major Revision
+200,89,16,7,Solid methodology; a few presentation issues to fix.,2024-09-21,Minor Revision
+201,89,34,6,Needs clearer motivation and more experiments.,2024-09-23,Major Revision
+202,90,17,7,Solid methodology; a few presentation issues to fix.,2024-09-16,Minor Revision
+203,90,33,7,"Good idea, needs a few more baselines.",2024-10-04,Minor Revision
+204,90,20,7,Solid methodology; a few presentation issues to fix.,2024-09-30,Minor Revision
+205,91,2,6,Needs clearer motivation and more experiments.,2024-08-26,Major Revision
+206,91,28,6,Needs clearer motivation and more experiments.,2024-08-22,Major Revision
+207,92,35,7,"Good idea, needs a few more baselines.",2024-09-05,Minor Revision
+208,92,8,7,Solid methodology; a few presentation issues to fix.,2024-09-06,Minor Revision
+209,93,42,6,Needs clearer motivation and more experiments.,2024-08-29,Major Revision
+210,93,14,6,Interesting but evaluation is limited.,2024-08-27,Major Revision
+211,93,39,3,Major flaws in the experimental setup.,2024-09-03,Reject
+212,94,13,7,"Good idea, needs a few more baselines.",2024-09-28,Minor Revision
+213,94,14,8,Solid methodology; a few presentation issues to fix.,2024-09-21,Accept
+214,95,34,8,"Good idea, needs a few more baselines.",2024-09-17,Accept
+215,95,13,7,"Good idea, needs a few more baselines.",2024-09-18,Minor Revision
+216,96,14,6,Interesting but evaluation is limited.,2024-08-28,Major Revision
+217,96,24,9,"Excellent contribution, clearly written and well evaluated.",2024-08-26,Accept
+218,96,39,8,"Good idea, needs a few more baselines.",2024-09-07,Accept
+219,97,33,9,Strong results and a convincing evaluation. Strong accept.,2024-08-23,Accept
+220,97,29,6,Needs clearer motivation and more experiments.,2024-09-02,Major Revision
+221,98,5,4,Major flaws in the experimental setup.,2024-09-12,Reject
+222,98,21,3,Major flaws in the experimental setup.,2024-09-07,Reject
+223,99,34,8,Solid methodology; a few presentation issues to fix.,2024-08-28,Accept
+224,99,11,8,"Good idea, needs a few more baselines.",2024-09-14,Accept
+225,99,38,7,Solid methodology; a few presentation issues to fix.,2024-09-03,Minor Revision
+226,100,14,4,Major flaws in the experimental setup.,2024-09-06,Reject
+227,100,26,3,Insufficient novelty and weak evaluation.,2024-09-06,Reject
+228,100,34,4,Insufficient novelty and weak evaluation.,2024-08-23,Reject
+229,101,38,7,"Good idea, needs a few more baselines.",2024-10-04,Minor Revision
+230,101,31,7,"Good idea, needs a few more baselines.",2024-09-24,Minor Revision
+231,102,43,8,"Good idea, needs a few more baselines.",2024-09-23,Accept
+232,102,42,8,"Good idea, needs a few more baselines.",2024-09-29,Accept
+233,102,32,8,Solid methodology; a few presentation issues to fix.,2024-10-06,Accept
+234,103,14,7,"Good idea, needs a few more baselines.",2024-09-23,Minor Revision
+235,103,43,9,Strong results and a convincing evaluation. Strong accept.,2024-09-17,Accept
+236,103,12,8,"Good idea, needs a few more baselines.",2024-09-21,Accept
+237,104,33,8,Solid methodology; a few presentation issues to fix.,2024-09-11,Accept
+238,104,4,7,"Good idea, needs a few more baselines.",2024-09-10,Minor Revision
+239,105,38,3,Major flaws in the experimental setup.,2024-09-23,Reject
+240,105,41,5,Needs clearer motivation and more experiments.,2024-09-24,Major Revision
+241,105,27,2,Major flaws in the experimental setup.,2024-09-22,Reject
+242,106,34,5,Needs clearer motivation and more experiments.,2024-08-27,Major Revision
+243,106,33,6,Needs clearer motivation and more experiments.,2024-08-27,Major Revision
+244,106,16,4,Major flaws in the experimental setup.,2024-09-02,Reject
+245,107,38,6,Interesting but evaluation is limited.,2024-08-30,Major Revision
+246,107,28,7,Solid methodology; a few presentation issues to fix.,2024-08-29,Minor Revision
+247,107,16,7,Solid methodology; a few presentation issues to fix.,2024-09-04,Minor Revision
+248,108,14,9,"Excellent contribution, clearly written and well evaluated.",2024-09-04,Accept
+249,108,19,8,Solid methodology; a few presentation issues to fix.,2024-09-02,Accept

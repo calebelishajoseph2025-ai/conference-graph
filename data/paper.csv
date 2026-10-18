@@ -1,0 +1,111 @@
+PaperID,Title,Abstract,ConfID,TrackID,Status,SubmissionDate
+1,A Study of Approximate Nearest Neighbour Search with Provable Guarantees,This paper studies graph databases and proposes an approach evaluated on public benchmarks.,1,2,Accepted,2026-08-19
+2,Robust Low-Resource Text Classification for Smart Cities,This paper studies sentiment analysis and proposes an approach evaluated on public benchmarks.,1,3,Under Review,2026-08-20
+3,A Study of Question Answering on Edge Devices,This paper studies machine translation and proposes an approach evaluated on public benchmarks.,1,3,Accepted,2026-09-04
+4,Scaling Low-Resource Text Classification,This paper studies machine translation and proposes an approach evaluated on public benchmarks.,1,3,Under Review,2026-08-31
+5,Adaptive Concurrency Control,This paper studies data cleaning and proposes an approach evaluated on public benchmarks.,1,2,Accepted,2026-08-09
+6,Scaling Indic Machine Translation under Adversarial Settings,This paper studies question answering and proposes an approach evaluated on public benchmarks.,1,3,Accepted,2026-08-28
+7,A Study of Query Plans,This paper studies indexing and proposes an approach evaluated on public benchmarks.,1,2,Under Review,2026-08-08
+8,Optimizing Language Models for Indian Languages,This paper studies machine translation and proposes an approach evaluated on public benchmarks.,1,3,Under Review,2026-08-24
+9,Scaling Privacy-Preserving Analytics with Provable Guarantees,This paper studies cryptography and proposes an approach evaluated on public benchmarks.,1,4,Submitted,2026-08-24
+10,Adaptive Intrusion Detection for Healthcare,This paper studies intrusion detection and proposes an approach evaluated on public benchmarks.,1,4,Under Review,2026-09-08
+11,Scaling Privacy-Preserving Analytics with Limited Labels,This paper studies differential privacy and proposes an approach evaluated on public benchmarks.,1,4,Accepted,2026-08-11
+12,Rethinking Graph Neural Networks with Provable Guarantees,This paper studies deep learning and proposes an approach evaluated on public benchmarks.,1,1,Under Review,2026-08-23
+13,Scaling Schema Matching with Limited Labels,This paper studies data cleaning and proposes an approach evaluated on public benchmarks.,1,2,Submitted,2026-08-28
+14,Adaptive Secure Aggregation under Adversarial Settings,This paper studies intrusion detection and proposes an approach evaluated on public benchmarks.,1,4,Under Review,2026-08-15
+15,Learning-Based Anomaly Detection in the Cloud,This paper studies healthcare ai and proposes an approach evaluated on public benchmarks.,1,1,Rejected,2026-08-29
+16,A Study of Approximate Nearest Neighbour Search in the Cloud,This paper studies indexing and proposes an approach evaluated on public benchmarks.,1,2,Under Review,2026-09-01
+17,Lightweight Query Plans for Healthcare,This paper studies graph databases and proposes an approach evaluated on public benchmarks.,1,2,Accepted,2026-09-11
+18,Learning-Based Secure Aggregation under Adversarial Settings,This paper studies blockchain and proposes an approach evaluated on public benchmarks.,1,4,Rejected,2026-09-09
+19,A Study of Opinion Mining in the Cloud,This paper studies question answering and proposes an approach evaluated on public benchmarks.,1,3,Under Review,2026-08-28
+20,Robust Query Plans for Indian Languages,This paper studies vector search and proposes an approach evaluated on public benchmarks.,1,2,Under Review,2026-08-28
+21,A Study of Learned Indexes in the Cloud,This paper studies indexing and proposes an approach evaluated on public benchmarks.,1,2,Accepted,2026-09-08
+22,Learning-Based Low-Resource Text Classification under Adversarial Settings,This paper studies language models and proposes an approach evaluated on public benchmarks.,1,3,Under Review,2026-08-14
+23,A Study of Approximate Nearest Neighbour Search with Limited Labels,This paper studies data cleaning and proposes an approach evaluated on public benchmarks.,2,6,Accepted,2026-09-19
+24,Adaptive Secure Aggregation in the Cloud,This paper studies cryptography and proposes an approach evaluated on public benchmarks.,2,7,Accepted,2026-10-04
+25,Benchmarking Attribute-Based Access Control under Adversarial Settings,This paper studies differential privacy and proposes an approach evaluated on public benchmarks.,2,7,Under Review,2026-10-05
+26,Learning-Based Serverless Runtimes at Scale,This paper studies stream processing and proposes an approach evaluated on public benchmarks.,2,5,Under Review,2026-09-19
+27,Rethinking Stream Processors for Indian Languages,This paper studies fault tolerance and proposes an approach evaluated on public benchmarks.,2,5,Under Review,2026-09-08
+28,Learning-Based Stream Processors in Real-Time Systems,This paper studies consensus and proposes an approach evaluated on public benchmarks.,2,5,Under Review,2026-09-05
+29,Benchmarking Join Algorithms for Smart Cities,This paper studies vector search and proposes an approach evaluated on public benchmarks.,2,6,Accepted,2026-09-16
+30,Rethinking Geo-Distributed Storage with Limited Labels,This paper studies fault tolerance and proposes an approach evaluated on public benchmarks.,2,5,Rejected,2026-09-05
+31,Robust Attribute-Based Access Control at Scale,This paper studies differential privacy and proposes an approach evaluated on public benchmarks.,2,7,Accepted,2026-09-07
+32,A Study of Concurrency Control in the Cloud,This paper studies data cleaning and proposes an approach evaluated on public benchmarks.,2,6,Rejected,2026-09-11
+33,Lightweight Stream Processors with Limited Labels,This paper studies cloud computing and proposes an approach evaluated on public benchmarks.,2,5,Under Review,2026-10-03
+34,Benchmarking Attribute-Based Access Control in Practice,This paper studies differential privacy and proposes an approach evaluated on public benchmarks.,2,7,Rejected,2026-09-08
+35,A Study of Serverless Runtimes for Healthcare,This paper studies edge computing and proposes an approach evaluated on public benchmarks.,2,5,Rejected,2026-09-18
+36,Adaptive Privacy-Preserving Analytics at Scale,This paper studies blockchain and proposes an approach evaluated on public benchmarks.,2,7,Accepted,2026-09-21
+37,Lightweight Query Plans for Indian Languages,This paper studies query optimization and proposes an approach evaluated on public benchmarks.,3,10,Rejected,2025-08-17
+38,Scaling Opinion Mining in the Cloud,This paper studies sentiment analysis and proposes an approach evaluated on public benchmarks.,3,9,Rejected,2025-09-03
+39,Lightweight Approximate Nearest Neighbour Search under Adversarial Settings,This paper studies graph databases and proposes an approach evaluated on public benchmarks.,3,10,Accepted,2025-08-17
+40,Towards Efficient Secure Aggregation for Indian Languages,This paper studies cryptography and proposes an approach evaluated on public benchmarks.,3,11,Accepted,2025-09-03
+41,Learning-Based Low-Resource Text Classification,This paper studies language models and proposes an approach evaluated on public benchmarks.,3,9,Accepted,2025-09-04
+42,Robust Concurrency Control for Indian Languages,This paper studies query optimization and proposes an approach evaluated on public benchmarks.,3,10,Rejected,2025-08-26
+43,A Study of Schema Matching with Provable Guarantees,This paper studies indexing and proposes an approach evaluated on public benchmarks.,3,10,Rejected,2025-08-12
+44,Lightweight Secure Aggregation for Smart Cities,This paper studies access control and proposes an approach evaluated on public benchmarks.,3,11,Accepted,2025-08-22
+45,Adaptive Intrusion Detection on Edge Devices,This paper studies access control and proposes an approach evaluated on public benchmarks.,3,11,Accepted,2025-08-28
+46,Towards Efficient Secure Aggregation at Scale,This paper studies cryptography and proposes an approach evaluated on public benchmarks.,3,11,Rejected,2025-08-23
+47,Robust Smart Contracts in Practice,This paper studies blockchain and proposes an approach evaluated on public benchmarks.,3,11,Accepted,2025-09-10
+48,Scaling Join Algorithms in the Cloud,This paper studies graph databases and proposes an approach evaluated on public benchmarks.,3,10,Accepted,2025-08-10
+49,Rethinking Federated Optimization in Real-Time Systems,This paper studies deep learning and proposes an approach evaluated on public benchmarks.,3,8,Accepted,2025-09-03
+50,A Study of Intrusion Detection with Provable Guarantees,This paper studies differential privacy and proposes an approach evaluated on public benchmarks.,3,11,Rejected,2025-08-18
+51,Lightweight Join Algorithms for Smart Cities,This paper studies data cleaning and proposes an approach evaluated on public benchmarks.,3,10,Rejected,2025-08-12
+52,Learning-Based Convolutional Networks on Edge Devices,This paper studies federated learning and proposes an approach evaluated on public benchmarks.,3,8,Accepted,2025-08-25
+53,Robust Convolutional Networks in Real-Time Systems,This paper studies reinforcement learning and proposes an approach evaluated on public benchmarks.,3,8,Rejected,2025-09-06
+54,A Study of Language Models at Scale,This paper studies language models and proposes an approach evaluated on public benchmarks.,3,9,Accepted,2025-08-23
+55,Benchmarking Concurrency Control with Limited Labels,This paper studies indexing and proposes an approach evaluated on public benchmarks.,3,10,Accepted,2025-09-03
+56,Learning-Based Smart Contracts for Healthcare,This paper studies differential privacy and proposes an approach evaluated on public benchmarks.,3,11,Rejected,2025-09-01
+57,Learning-Based Smart Contracts in Practice,This paper studies blockchain and proposes an approach evaluated on public benchmarks.,3,11,Rejected,2025-09-03
+58,A Study of Secure Aggregation under Adversarial Settings,This paper studies cryptography and proposes an approach evaluated on public benchmarks.,3,11,Rejected,2025-09-12
+59,Lightweight Learned Indexes in the Cloud,This paper studies transaction processing and proposes an approach evaluated on public benchmarks.,3,10,Accepted,2025-08-15
+60,Robust Approximate Nearest Neighbour Search under Adversarial Settings,This paper studies transaction processing and proposes an approach evaluated on public benchmarks.,3,10,Accepted,2025-08-14
+61,Robust Opinion Mining in the Cloud,This paper studies sentiment analysis and proposes an approach evaluated on public benchmarks.,3,9,Accepted,2025-08-28
+62,Learning-Based Concurrency Control,This paper studies query optimization and proposes an approach evaluated on public benchmarks.,3,10,Rejected,2025-08-25
+63,Robust Intrusion Detection at Scale,This paper studies access control and proposes an approach evaluated on public benchmarks.,4,14,Rejected,2025-10-02
+64,Learning-Based Intrusion Detection on Edge Devices,This paper studies access control and proposes an approach evaluated on public benchmarks.,4,14,Accepted,2025-09-23
+65,Rethinking Approximate Nearest Neighbour Search in the Cloud,This paper studies transaction processing and proposes an approach evaluated on public benchmarks.,4,13,Accepted,2025-10-03
+66,Optimizing Schema Matching for Smart Cities,This paper studies query optimization and proposes an approach evaluated on public benchmarks.,4,13,Accepted,2025-09-27
+67,Benchmarking Approximate Nearest Neighbour Search with Limited Labels,This paper studies indexing and proposes an approach evaluated on public benchmarks.,4,13,Accepted,2025-09-24
+68,Lightweight Geo-Distributed Storage for Indian Languages,This paper studies fault tolerance and proposes an approach evaluated on public benchmarks.,4,12,Rejected,2025-09-03
+69,A Study of Stream Processors under Adversarial Settings,This paper studies consensus and proposes an approach evaluated on public benchmarks.,4,12,Accepted,2025-09-14
+70,Scaling Learned Indexes on Edge Devices,This paper studies data cleaning and proposes an approach evaluated on public benchmarks.,4,13,Rejected,2025-09-10
+71,Scaling Join Algorithms at Scale,This paper studies data cleaning and proposes an approach evaluated on public benchmarks.,4,13,Rejected,2025-09-19
+72,Adaptive Geo-Distributed Storage in Real-Time Systems,This paper studies stream processing and proposes an approach evaluated on public benchmarks.,4,12,Rejected,2025-09-19
+73,Benchmarking Query Plans in Real-Time Systems,This paper studies graph databases and proposes an approach evaluated on public benchmarks.,4,13,Accepted,2025-09-21
+74,Learning-Based Serverless Runtimes for Smart Cities,This paper studies serverless and proposes an approach evaluated on public benchmarks.,4,12,Accepted,2025-09-21
+75,Adaptive Edge Orchestration under Adversarial Settings,This paper studies consensus and proposes an approach evaluated on public benchmarks.,4,12,Accepted,2025-09-09
+76,Optimizing Consensus Protocols under Adversarial Settings,This paper studies consensus and proposes an approach evaluated on public benchmarks.,4,12,Rejected,2025-09-04
+77,Towards Efficient Serverless Runtimes for Healthcare,This paper studies edge computing and proposes an approach evaluated on public benchmarks.,4,12,Accepted,2025-09-11
+78,Lightweight Join Algorithms with Provable Guarantees,This paper studies graph databases and proposes an approach evaluated on public benchmarks.,4,13,Rejected,2025-09-26
+79,Scaling Secure Aggregation with Provable Guarantees,This paper studies intrusion detection and proposes an approach evaluated on public benchmarks.,4,14,Accepted,2025-09-09
+80,Benchmarking Replicated State Machines in Practice,This paper studies cloud computing and proposes an approach evaluated on public benchmarks.,4,12,Rejected,2025-09-07
+81,Scaling Question Answering for Indian Languages,This paper studies language models and proposes an approach evaluated on public benchmarks.,5,16,Rejected,2024-08-22
+82,A Study of Indic Machine Translation in the Cloud,This paper studies language models and proposes an approach evaluated on public benchmarks.,5,16,Rejected,2024-08-15
+83,Towards Efficient Approximate Nearest Neighbour Search in Real-Time Systems,This paper studies query optimization and proposes an approach evaluated on public benchmarks.,5,17,Rejected,2024-09-12
+84,Towards Efficient Indic Machine Translation with Provable Guarantees,This paper studies language models and proposes an approach evaluated on public benchmarks.,5,16,Accepted,2024-08-31
+85,Towards Efficient Schema Matching on Edge Devices,This paper studies transaction processing and proposes an approach evaluated on public benchmarks.,5,17,Rejected,2024-08-30
+86,Learning-Based Convolutional Networks under Adversarial Settings,This paper studies federated learning and proposes an approach evaluated on public benchmarks.,5,15,Rejected,2024-09-04
+87,Optimizing Learned Indexes at Scale,This paper studies indexing and proposes an approach evaluated on public benchmarks.,5,17,Rejected,2024-08-22
+88,Benchmarking Query Plans for Healthcare,This paper studies query optimization and proposes an approach evaluated on public benchmarks.,5,17,Rejected,2024-08-28
+89,Robust Representation Learning in the Cloud,This paper studies reinforcement learning and proposes an approach evaluated on public benchmarks.,5,15,Rejected,2024-09-09
+90,Benchmarking Low-Resource Text Classification with Provable Guarantees,This paper studies sentiment analysis and proposes an approach evaluated on public benchmarks.,5,16,Accepted,2024-09-07
+91,Towards Efficient Schema Matching at Scale,This paper studies transaction processing and proposes an approach evaluated on public benchmarks.,5,17,Rejected,2024-08-11
+92,Optimizing Language Models in Practice,This paper studies sentiment analysis and proposes an approach evaluated on public benchmarks.,5,16,Accepted,2024-08-19
+93,Scaling Join Algorithms,This paper studies query optimization and proposes an approach evaluated on public benchmarks.,5,17,Rejected,2024-08-16
+94,Benchmarking Representation Learning for Healthcare,This paper studies federated learning and proposes an approach evaluated on public benchmarks.,5,15,Accepted,2024-09-09
+95,Learning-Based Low-Resource Text Classification for Indian Languages,This paper studies sentiment analysis and proposes an approach evaluated on public benchmarks.,5,16,Accepted,2024-08-24
+96,Lightweight Concurrency Control in Practice,This paper studies data cleaning and proposes an approach evaluated on public benchmarks.,5,17,Accepted,2024-08-12
+97,Scaling Language Models in Real-Time Systems,This paper studies machine translation and proposes an approach evaluated on public benchmarks.,5,16,Accepted,2024-08-09
+98,Adaptive Indic Machine Translation with Limited Labels,This paper studies sentiment analysis and proposes an approach evaluated on public benchmarks.,5,16,Rejected,2024-08-23
+99,Robust Language Models for Smart Cities,This paper studies question answering and proposes an approach evaluated on public benchmarks.,5,16,Accepted,2024-08-17
+100,A Study of Concurrency Control for Healthcare,This paper studies query optimization and proposes an approach evaluated on public benchmarks.,5,17,Rejected,2024-08-14
+101,Scaling Convolutional Networks with Limited Labels,This paper studies healthcare ai and proposes an approach evaluated on public benchmarks.,5,15,Accepted,2024-09-07
+102,Benchmarking Learned Indexes for Indian Languages,This paper studies data cleaning and proposes an approach evaluated on public benchmarks.,5,17,Accepted,2024-09-10
+103,Lightweight Concurrency Control in Real-Time Systems,This paper studies graph databases and proposes an approach evaluated on public benchmarks.,5,17,Accepted,2024-09-06
+104,Robust Language Models under Adversarial Settings,This paper studies question answering and proposes an approach evaluated on public benchmarks.,5,16,Accepted,2024-08-25
+105,Learning-Based Representation Learning on Edge Devices,This paper studies healthcare ai and proposes an approach evaluated on public benchmarks.,5,15,Rejected,2024-09-04
+106,Towards Efficient Language Models for Smart Cities,This paper studies question answering and proposes an approach evaluated on public benchmarks.,5,16,Rejected,2024-08-09
+107,A Study of Representation Learning on Edge Devices,This paper studies explainable ai and proposes an approach evaluated on public benchmarks.,5,15,Rejected,2024-08-17
+108,Learning-Based Approximate Nearest Neighbour Search in Real-Time Systems,This paper studies query optimization and proposes an approach evaluated on public benchmarks.,5,17,Accepted,2024-08-09
+109,A Study of Query Plans for Healthcare,This paper studies vector search and proposes an approach evaluated on public benchmarks.,5,17,Submitted,2024-08-27
+110,Benchmarking Question Answering at Scale,This paper studies machine translation and proposes an approach evaluated on public benchmarks.,5,16,Submitted,2024-09-02

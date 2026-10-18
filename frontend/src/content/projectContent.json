@@ -1,0 +1,707 @@
+{
+  "_note": "Static reference content. Ignore any colour fields. Seed-data expectations are for live check chips only, never display them as live values.",
+  "referenceData": {
+    "conferences": [
+      {
+        "confId": 1,
+        "name": "Intl Conf on AI Research",
+        "year": 2026,
+        "venue": "Chennai",
+        "label": "Intl Conf on AI Research 2026, Chennai"
+      },
+      {
+        "confId": 2,
+        "name": "Natl Conf on Data Systems",
+        "year": 2026,
+        "venue": "Bengaluru",
+        "label": "Natl Conf on Data Systems 2026, Bengaluru"
+      },
+      {
+        "confId": 3,
+        "name": "Intl Conf on AI Research",
+        "year": 2025,
+        "venue": "Hyderabad",
+        "label": "Intl Conf on AI Research 2025, Hyderabad"
+      },
+      {
+        "confId": 4,
+        "name": "Natl Conf on Data Systems",
+        "year": 2025,
+        "venue": "Pune",
+        "label": "Natl Conf on Data Systems 2025, Pune"
+      },
+      {
+        "confId": 5,
+        "name": "Intl Conf on AI Research",
+        "year": 2024,
+        "venue": "Delhi",
+        "label": "Intl Conf on AI Research 2024, Delhi"
+      }
+    ],
+    "tracks": [
+      {
+        "trackId": 1,
+        "name": "Machine Learning",
+        "confId": 1
+      },
+      {
+        "trackId": 2,
+        "name": "Databases",
+        "confId": 1
+      },
+      {
+        "trackId": 3,
+        "name": "NLP",
+        "confId": 1
+      },
+      {
+        "trackId": 4,
+        "name": "Security & Privacy",
+        "confId": 1
+      },
+      {
+        "trackId": 5,
+        "name": "Distributed Systems",
+        "confId": 2
+      },
+      {
+        "trackId": 6,
+        "name": "Databases",
+        "confId": 2
+      },
+      {
+        "trackId": 7,
+        "name": "Security & Privacy",
+        "confId": 2
+      },
+      {
+        "trackId": 8,
+        "name": "Machine Learning",
+        "confId": 3
+      },
+      {
+        "trackId": 9,
+        "name": "NLP",
+        "confId": 3
+      },
+      {
+        "trackId": 10,
+        "name": "Databases",
+        "confId": 3
+      },
+      {
+        "trackId": 11,
+        "name": "Security & Privacy",
+        "confId": 3
+      },
+      {
+        "trackId": 12,
+        "name": "Distributed Systems",
+        "confId": 4
+      },
+      {
+        "trackId": 13,
+        "name": "Databases",
+        "confId": 4
+      },
+      {
+        "trackId": 14,
+        "name": "Security & Privacy",
+        "confId": 4
+      },
+      {
+        "trackId": 15,
+        "name": "Machine Learning",
+        "confId": 5
+      },
+      {
+        "trackId": 16,
+        "name": "NLP",
+        "confId": 5
+      },
+      {
+        "trackId": 17,
+        "name": "Databases",
+        "confId": 5
+      }
+    ],
+    "keywords": [
+      {
+        "keywordId": 1,
+        "keyword": "Access Control"
+      },
+      {
+        "keywordId": 2,
+        "keyword": "Blockchain"
+      },
+      {
+        "keywordId": 3,
+        "keyword": "Cloud Computing"
+      },
+      {
+        "keywordId": 4,
+        "keyword": "Consensus"
+      },
+      {
+        "keywordId": 5,
+        "keyword": "Cryptography"
+      },
+      {
+        "keywordId": 6,
+        "keyword": "Data Cleaning"
+      },
+      {
+        "keywordId": 7,
+        "keyword": "Deep Learning"
+      },
+      {
+        "keywordId": 8,
+        "keyword": "Differential Privacy"
+      },
+      {
+        "keywordId": 9,
+        "keyword": "Edge Computing"
+      },
+      {
+        "keywordId": 10,
+        "keyword": "Explainable AI"
+      },
+      {
+        "keywordId": 11,
+        "keyword": "Fault Tolerance"
+      },
+      {
+        "keywordId": 12,
+        "keyword": "Federated Learning"
+      },
+      {
+        "keywordId": 13,
+        "keyword": "Graph Databases"
+      },
+      {
+        "keywordId": 14,
+        "keyword": "Healthcare AI"
+      },
+      {
+        "keywordId": 15,
+        "keyword": "Indexing"
+      },
+      {
+        "keywordId": 16,
+        "keyword": "Intrusion Detection"
+      },
+      {
+        "keywordId": 17,
+        "keyword": "Language Models"
+      },
+      {
+        "keywordId": 18,
+        "keyword": "Low-Resource Languages"
+      },
+      {
+        "keywordId": 19,
+        "keyword": "Machine Translation"
+      },
+      {
+        "keywordId": 20,
+        "keyword": "Query Optimization"
+      },
+      {
+        "keywordId": 21,
+        "keyword": "Question Answering"
+      },
+      {
+        "keywordId": 22,
+        "keyword": "Reinforcement Learning"
+      },
+      {
+        "keywordId": 23,
+        "keyword": "Sentiment Analysis"
+      },
+      {
+        "keywordId": 24,
+        "keyword": "Serverless"
+      },
+      {
+        "keywordId": 25,
+        "keyword": "Stream Processing"
+      },
+      {
+        "keywordId": 26,
+        "keyword": "Transaction Processing"
+      },
+      {
+        "keywordId": 27,
+        "keyword": "Transfer Learning"
+      },
+      {
+        "keywordId": 28,
+        "keyword": "Vector Search"
+      }
+    ]
+  },
+  "schemaNodes": [
+    {
+      "id": "Conference",
+      "label": "Conference",
+      "shape": "diamond",
+      "properties": [
+        "confId",
+        "name",
+        "year",
+        "startDate",
+        "endDate",
+        "venue"
+      ],
+      "constraint": "confId is unique",
+      "notes": "Root of the schema. Tracks, sessions and papers all point to it."
+    },
+    {
+      "id": "Track",
+      "label": "Track",
+      "shape": "hexagon",
+      "properties": [
+        "trackId",
+        "name",
+        "description"
+      ],
+      "constraint": "trackId is unique",
+      "notes": "Linked to its conference by PART_OF."
+    },
+    {
+      "id": "Session",
+      "label": "Session",
+      "shape": "round-rectangle",
+      "properties": [
+        "sessionId",
+        "name",
+        "date",
+        "startTime",
+        "endTime",
+        "room"
+      ],
+      "constraint": "sessionId is unique",
+      "notes": "Linked to its conference by SCHEDULED_AT."
+    },
+    {
+      "id": "Author",
+      "label": "Author",
+      "shape": "ellipse",
+      "properties": [
+        "authorId",
+        "name",
+        "affiliation",
+        "email",
+        "country"
+      ],
+      "constraint": "authorId is unique",
+      "notes": "Co-authorship is not stored; it is derived from two WROTE edges to the same Paper."
+    },
+    {
+      "id": "Reviewer",
+      "label": "Reviewer",
+      "shape": "ellipse",
+      "properties": [
+        "reviewerId",
+        "name",
+        "affiliation",
+        "email",
+        "expertise",
+        "country"
+      ],
+      "constraint": "reviewerId is unique",
+      "notes": "A reviewer with the same email as an author is joined to that author by SAME_PERSON_AS."
+    },
+    {
+      "id": "Paper",
+      "label": "Paper",
+      "shape": "round-rectangle",
+      "properties": [
+        "paperId",
+        "title",
+        "abstract",
+        "status",
+        "submissionDate"
+      ],
+      "constraint": "paperId is unique",
+      "notes": "Status is one of Submitted, Under Review, Accepted, Rejected."
+    },
+    {
+      "id": "Keyword",
+      "label": "Keyword",
+      "shape": "tag",
+      "properties": [
+        "keywordId",
+        "keyword"
+      ],
+      "constraint": "keywordId is unique",
+      "notes": "Used by the reviewer recommender through shared keywords."
+    },
+    {
+      "id": "Presentation",
+      "label": "Presentation",
+      "shape": "triangle",
+      "properties": [
+        "presentationId",
+        "startTime",
+        "endTime",
+        "deliveryMode"
+      ],
+      "constraint": "presentationId is unique",
+      "notes": "Held in a Session and presents a Paper."
+    }
+  ],
+  "schemaEdges": [
+    {
+      "id": "Track-PART_OF-Conference",
+      "source": "Track",
+      "target": "Conference",
+      "label": "PART_OF",
+      "properties": [],
+      "notes": "A track belongs to one conference."
+    },
+    {
+      "id": "Session-SCHEDULED_AT-Conference",
+      "source": "Session",
+      "target": "Conference",
+      "label": "SCHEDULED_AT",
+      "properties": [],
+      "notes": "A session is scheduled at a conference."
+    },
+    {
+      "id": "Paper-SUBMITTED_TO-Conference",
+      "source": "Paper",
+      "target": "Conference",
+      "label": "SUBMITTED_TO",
+      "properties": [],
+      "notes": "The conference a paper was submitted to."
+    },
+    {
+      "id": "Paper-IN_TRACK-Track",
+      "source": "Paper",
+      "target": "Track",
+      "label": "IN_TRACK",
+      "properties": [],
+      "notes": "The track a paper belongs to."
+    },
+    {
+      "id": "Author-WROTE-Paper",
+      "source": "Author",
+      "target": "Paper",
+      "label": "WROTE",
+      "properties": [
+        "authorOrder",
+        "isCorresponding"
+      ],
+      "notes": "Carries the author order and the corresponding-author flag."
+    },
+    {
+      "id": "Paper-HAS_KEYWORD-Keyword",
+      "source": "Paper",
+      "target": "Keyword",
+      "label": "HAS_KEYWORD",
+      "properties": [],
+      "notes": "Keywords attached to a paper."
+    },
+    {
+      "id": "Author-SUBMITTED-Paper",
+      "source": "Author",
+      "target": "Paper",
+      "label": "SUBMITTED",
+      "properties": [
+        "submissionId",
+        "date",
+        "source",
+        "status"
+      ],
+      "notes": "Who submitted the paper, from the SUBMISSION table."
+    },
+    {
+      "id": "Reviewer-ASSIGNED_TO-Paper",
+      "source": "Reviewer",
+      "target": "Paper",
+      "label": "ASSIGNED_TO",
+      "properties": [
+        "assignedDate"
+      ],
+      "notes": "A reviewer assigned to a paper."
+    },
+    {
+      "id": "Reviewer-REVIEWED-Paper",
+      "source": "Reviewer",
+      "target": "Paper",
+      "label": "REVIEWED",
+      "properties": [
+        "reviewId",
+        "score",
+        "comments",
+        "reviewDate",
+        "recommendation"
+      ],
+      "notes": "A completed review."
+    },
+    {
+      "id": "Presentation-HELD_IN-Session",
+      "source": "Presentation",
+      "target": "Session",
+      "label": "HELD_IN",
+      "properties": [],
+      "notes": "The session a presentation is held in."
+    },
+    {
+      "id": "Presentation-PRESENTS-Paper",
+      "source": "Presentation",
+      "target": "Paper",
+      "label": "PRESENTS",
+      "properties": [],
+      "notes": "The paper being presented."
+    },
+    {
+      "id": "Reviewer-SAME_PERSON_AS-Author",
+      "source": "Reviewer",
+      "target": "Author",
+      "label": "SAME_PERSON_AS",
+      "properties": [],
+      "notes": "Same email in Reviewer and Author. This one edge replaces the DA2 email join in conflict-of-interest checks."
+    }
+  ],
+  "tableMappings": [
+    {
+      "table": "CONFERENCE",
+      "relationalColumns": "ConfID, Name, Year, StartDate, EndDate, Venue",
+      "graphPattern": "(:Conference)",
+      "category": "Node",
+      "advantage": "Plain entity, no join needed to reach tracks, sessions or papers."
+    },
+    {
+      "table": "TRACK",
+      "relationalColumns": "TrackID, TrackName, Description, ConfID (FK)",
+      "graphPattern": "(:Track)-[:PART_OF]->(:Conference)",
+      "category": "Composite",
+      "advantage": "The foreign key becomes a relationship."
+    },
+    {
+      "table": "SESSION_TBL",
+      "relationalColumns": "SessionID, SessionName, SessionDate, StartTime, EndTime, Room, ConfID (FK)",
+      "graphPattern": "(:Session)-[:SCHEDULED_AT]->(:Conference)",
+      "category": "Composite",
+      "advantage": "The foreign key becomes a relationship."
+    },
+    {
+      "table": "AUTHOR",
+      "relationalColumns": "AuthorID, Name, Affiliation, Email, Country",
+      "graphPattern": "(:Author)",
+      "category": "Node",
+      "advantage": "Starting point for co-author traversals."
+    },
+    {
+      "table": "REVIEWER",
+      "relationalColumns": "ReviewerID, Name, Affiliation, Email, Expertise, Country",
+      "graphPattern": "(:Reviewer)-[:SAME_PERSON_AS]->(:Author)",
+      "category": "Composite",
+      "advantage": "An email join in SQL becomes one stored edge."
+    },
+    {
+      "table": "PAPER",
+      "relationalColumns": "PaperID, Title, Abstract, ConfID (FK), TrackID (FK), Status, SubmissionDate",
+      "graphPattern": "(:Paper)-[:SUBMITTED_TO]->(:Conference), (:Paper)-[:IN_TRACK]->(:Track)",
+      "category": "Composite",
+      "advantage": "Two foreign keys become two relationships."
+    },
+    {
+      "table": "PAPER_AUTHOR",
+      "relationalColumns": "PaperID, AuthorID, AuthorOrder, IsCorresponding",
+      "graphPattern": "(:Author)-[:WROTE {authorOrder, isCorresponding}]->(:Paper)",
+      "category": "Relationship",
+      "advantage": "The junction table disappears. Co-authors are two hops through a paper."
+    },
+    {
+      "table": "PAPER_REVIEWER",
+      "relationalColumns": "PaperID, ReviewerID, AssignedDate",
+      "graphPattern": "(:Reviewer)-[:ASSIGNED_TO {assignedDate}]->(:Paper)",
+      "category": "Relationship",
+      "advantage": "The junction table becomes an edge."
+    },
+    {
+      "table": "REVIEW",
+      "relationalColumns": "ReviewID, PaperID, ReviewerID, Score, Comments, ReviewDate, Recommendation",
+      "graphPattern": "(:Reviewer)-[:REVIEWED {reviewId, score, comments, reviewDate, recommendation}]->(:Paper)",
+      "category": "Relationship",
+      "advantage": "A review is an edge with properties instead of a row with a composite foreign key."
+    },
+    {
+      "table": "SUBMISSION",
+      "relationalColumns": "SubmissionID, PaperID, SubmittedBy (FK), SubmissionDate, Status, Source",
+      "graphPattern": "(:Author)-[:SUBMITTED {submissionId, date, source, status}]->(:Paper)",
+      "category": "Relationship",
+      "advantage": "Who submitted what, as an edge."
+    },
+    {
+      "table": "KEYWORD",
+      "relationalColumns": "KeywordID, Keyword",
+      "graphPattern": "(:Keyword)",
+      "category": "Node",
+      "advantage": "Shared keywords are found by walking to a common Keyword node."
+    },
+    {
+      "table": "PAPER_KEYWORD",
+      "relationalColumns": "PaperID, KeywordID",
+      "graphPattern": "(:Paper)-[:HAS_KEYWORD]->(:Keyword)",
+      "category": "Relationship",
+      "advantage": "The junction table becomes an edge."
+    },
+    {
+      "table": "PRESENTATION",
+      "relationalColumns": "PresentationID, SessionID (FK), StartTime, EndTime, DeliveryMode",
+      "graphPattern": "(:Presentation)-[:HELD_IN]->(:Session), (:Presentation)-[:PRESENTS]->(:Paper)",
+      "category": "Composite",
+      "advantage": "The paper link comes from da3_presentation_paper.csv, a graph-side file with no Oracle table."
+    }
+  ],
+  "demoSteps": [
+    {
+      "step": 1,
+      "title": "Dual-database health and parity audit",
+      "rubricArea": "System architecture and parity",
+      "description": "Verify that both databases are connected and that every parity check matches between Oracle and Neo4j.",
+      "expectedOutcome": "Both databases connected. Every parity check matches. The seed data has 444 graph nodes and 1,702 Oracle rows across 13 tables; the page must show the live values.",
+      "pageId": "dashboard",
+      "queryPreview": "GET /api/health and GET /api/admin/parity",
+      "verify": "parity"
+    },
+    {
+      "step": 2,
+      "title": "Graph exploration and neighbourhood expansion",
+      "rubricArea": "Graph visualisation and Cypher",
+      "description": "Explore 1-hop and 2-hop neighbourhoods on the Cytoscape canvas with the node inspector and the 150-node cap.",
+      "expectedOutcome": "Paper 1, \"A Study of Approximate Nearest Neighbour Search with Provable Guarantees\", with its authors, keywords and reviews.",
+      "pageId": "explorer",
+      "queryPreview": "MATCH (n:Paper {paperId: 1})-[r]-(m) RETURN n, r, m LIMIT 150",
+      "params": {
+        "type": "paper",
+        "id": "1",
+        "depth": "2"
+      }
+    },
+    {
+      "step": 3,
+      "title": "Paper lifecycle and CRUD",
+      "rubricArea": "Core database operations",
+      "description": "Browse papers with author order, status filters and the detail drawer.",
+      "expectedOutcome": "Filter by Accepted or Under Review and read the ordered author list with the corresponding author flagged.",
+      "pageId": "papers",
+      "queryPreview": "MATCH (p:Paper)<-[w:WROTE]-(a:Author) RETURN p, collect(a) ORDER BY p.paperId DESC"
+    },
+    {
+      "step": 4,
+      "title": "Explainable reviewer recommender",
+      "rubricArea": "Intelligent querying and heuristics",
+      "description": "Rank candidate reviewers by shared keywords, expertise match and workload, and show every part of the score.",
+      "expectedOutcome": "The score formula and weights come from the API. Reviewers in conflict are excluded.",
+      "pageId": "assignments",
+      "queryPreview": "GET /api/recommend/reviewers?paperId=1&limit=5",
+      "params": {
+        "paperId": 1
+      }
+    },
+    {
+      "step": 5,
+      "title": "Conflict of interest detection, Neo4j and Oracle",
+      "rubricArea": "Business rules and integrity",
+      "description": "Assign a reviewer who is also an author of the paper. Neo4j returns 409 with the path. Oracle dry-run shows the real ORA-20001 and ORA-20002 errors.",
+      "expectedOutcome": "Load a pair from GET /api/demo/coi-pairs. The seed file lists Paper 1 with Reviewer 2 first.",
+      "pageId": "assignments",
+      "queryPreview": "MATCH (rv:Reviewer)-[:SAME_PERSON_AS]->(:Author)-[:WROTE]->(p:Paper) RETURN count(p) > 0",
+      "params": {
+        "paperId": 1,
+        "triggerRisky": true
+      }
+    },
+    {
+      "step": 6,
+      "title": "Review submission and auto-accept",
+      "rubricArea": "Triggers and event replication",
+      "description": "Submit a score of 9 or more and see the paper move to Accepted, mirroring Oracle trigger trg_flag_paper.",
+      "expectedOutcome": "A score of 9 or 10 on a non-rejected paper sets its status to Accepted.",
+      "pageId": "reviews",
+      "queryPreview": "MATCH (p:Paper {paperId: $id}) SET p.status = CASE WHEN $score >= 9 THEN 'Accepted' ELSE p.status END",
+      "params": {
+        "paperId": 1
+      }
+    },
+    {
+      "step": 7,
+      "title": "Shortest collaboration path",
+      "rubricArea": "Graph-native path algorithms",
+      "description": "Find the shortest co-author path between author 1 and author 60.",
+      "expectedOutcome": "Seed data: 3 hops, Emma Krishnan, Rahul Liu, Yuki Zhang, Lukas Reddy, through papers 4, 71 and 66. Verify live.",
+      "pageId": "paths",
+      "queryPreview": "MATCH (a:Author {authorId: 1}), (b:Author {authorId: 60}), p = shortestPath((a)-[:WROTE*..8]-(b)) RETURN p",
+      "params": {
+        "from": 1,
+        "to": 60
+      },
+      "verify": "path"
+    },
+    {
+      "step": 8,
+      "title": "Reachable within N hops",
+      "rubricArea": "Recursive traversals",
+      "description": "Count authors reachable from author 1 within 1, 2 and 3 co-author hops.",
+      "expectedOutcome": "Seed data: 5 authors at 1 hop, 15 within 2 hops, 54 within 3 hops (cumulative). Verify live.",
+      "pageId": "paths",
+      "queryPreview": "MATCH (a:Author {authorId: 1})-[:WROTE*2..4]-(other:Author) RETURN DISTINCT other",
+      "params": {
+        "from": 1,
+        "mode": "hops",
+        "hops": 3
+      },
+      "verify": "hops"
+    },
+    {
+      "step": 9,
+      "title": "Network centrality and institutions",
+      "rubricArea": "Complex analytics and aggregations",
+      "description": "Rank authors by distinct co-authors, then look at institution pairs and research areas.",
+      "expectedOutcome": "Seed data: Yuki Zhang (author 9) has the most co-authors, 30, across 15 papers. Databases has 40 papers and NLP 23. Verify live.",
+      "pageId": "analytics",
+      "queryPreview": "MATCH (a:Author)-[:WROTE]->(p:Paper)<-[:WROTE]-(co:Author) RETURN a, count(DISTINCT co) AS degree ORDER BY degree DESC",
+      "verify": "central"
+    },
+    {
+      "step": 10,
+      "title": "SQL versus Cypher benchmark",
+      "rubricArea": "Technology comparison and justification",
+      "description": "Run five equivalent queries on Oracle and Neo4j and compare median timings and results.",
+      "expectedOutcome": "Results match on both engines. Oracle may be faster at this scale; report it as it is.",
+      "pageId": "compare",
+      "queryPreview": "Oracle recursive CTE with CYCLE versus Neo4j shortestPath()",
+      "params": {
+        "scenario": "shortest-path"
+      },
+      "verify": "resultsMatch"
+    }
+  ],
+  "pathPresets": [
+    {
+      "from": 1,
+      "to": 60,
+      "expectedHops": 3
+    },
+    {
+      "from": 1,
+      "to": 31,
+      "expectedHops": 1
+    },
+    {
+      "from": 9,
+      "to": 63,
+      "expectedHops": 2
+    },
+    {
+      "from": 1,
+      "to": 1,
+      "expectedHops": 0
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+services:
+  - type: web
+    name: conference-graph-api
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: PYTHONPATH
+        value: backend
+      - key: ENV
+        value: production
+      - key: ALLOWED_ORIGIN
+        value: "http://localhost:5173"
+      - key: ALLOWED_ORIGIN_REGEX
+        value: "^https://.*\\.vercel\\.app$"
+      - key: DATA_DIR
+        value: "./data"
+      - key: ORACLE_USER
+        sync: false
+      - key: ORACLE_PASSWORD
+        sync: false
+      - key: ORACLE_DSN
+        sync: false
+      - key: NEO4J_URI
+        sync: false
+      - key: NEO4J_USER
+        sync: false
+      - key: NEO4J_PASSWORD
+        sync: false
+      - key: NEO4J_DATABASE
+        value: neo4j
+      - key: ADMIN_TOKEN
+        generateValue: true

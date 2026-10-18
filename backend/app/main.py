@@ -169,3 +169,9 @@ def root():
         "health_check": "/api/health",
         "parity_check": "/api/admin/parity",
     }
+
+
+@app.get("/healthz")
+def healthz():
+    return {"status": "ok"}
+

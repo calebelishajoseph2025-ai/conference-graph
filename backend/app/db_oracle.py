@@ -234,6 +234,12 @@ class EmbeddedCursor:
         else:
             raise NotImplementedError(f"Procedure {name} is not implemented in embedded mode.")
 
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        pass
+
     def close(self):
         pass
 
@@ -242,6 +248,12 @@ class EmbeddedConnection:
     def __init__(self, conn: sqlite3.Connection):
         self._conn = conn
         self.call_timeout = 10000
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        pass
 
     def cursor(self):
         return EmbeddedCursor(self._conn.cursor())
@@ -254,6 +266,7 @@ class EmbeddedConnection:
 
     def close(self):
         pass
+
 
 
 @contextmanager
@@ -438,5 +451,5 @@ def check_oracle_health() -> Dict[str, Any]:
             "tables": {},
             "total_rows": 0,
             "elapsed_ms": round(elapsed_ms, 2),
-            "error": "Failed to connect to Oracle database",
+            "error": str(e),
         }

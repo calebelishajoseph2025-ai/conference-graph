@@ -8,7 +8,7 @@ import { WhatSection } from './WhatSection';
 import { WhySection } from './WhySection';
 import { HowSection } from './HowSection';
 import { FeaturesSection } from './FeaturesSection';
-import { StackSection, TeamSection, HomeFooter } from './TeamSection';
+import { StackSection, HomeFooter } from './TeamSection';
 import { ChooseView } from './ChooseView';
 
 function Hero() {
@@ -98,7 +98,6 @@ export function Home() {
         <HowSection />
         <FeaturesSection />
         <StackSection />
-        <TeamSection />
         <ChooseView />
       </main>
       <HomeFooter />

@@ -7,7 +7,6 @@ const LINKS = [
   { href: '#comparison', label: 'SQL vs Cypher' },
   { href: '#architecture', label: 'Architecture' },
   { href: '#features', label: 'Features' },
-  { href: '#team', label: 'Team' },
 ];
 
 export function HomeNav() {

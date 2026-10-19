@@ -42,7 +42,7 @@ async function main() {
 
   // Check all sections on Home
   const sectionChecks = await page.evaluate(() => {
-    const sections = ['top', 'overview', 'comparison', 'architecture', 'features', 'team', 'choose'];
+    const sections = ['top', 'overview', 'comparison', 'architecture', 'features', 'choose'];
     return sections.map(id => {
       const el = document.getElementById(id);
       return {

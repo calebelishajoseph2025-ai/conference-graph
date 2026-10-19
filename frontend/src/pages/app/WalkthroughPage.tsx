@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Check, CheckCircle2, Circle, Play, ShieldCheck, TriangleAlert } from 'lucide-react';
 import content from '@/content/projectContent.json';
@@ -110,17 +110,33 @@ function routeFor(step: (typeof steps)[number]): string {
   return qs ? `${pathWithId}?${qs}` : pathWithId;
 }
 
+const persistentWalkthroughDone = new Set<number>();
+
 export function WalkthroughPage() {
   const navigate = useNavigate();
-  const [done, setDone] = useState<Set<number>>(new Set());
+  const [done, setDone] = useState<Set<number>>(() => new Set(persistentWalkthroughDone));
   const [verifying, setVerifying] = useState<Record<number, boolean>>({});
   const stepRefs = useRef<(HTMLElement | null)[]>([]);
+
+  useEffect(() => {
+    const onReset = () => {
+      persistentWalkthroughDone.clear();
+      setDone(new Set());
+    };
+    window.addEventListener('conference-graph-reset', onReset);
+    return () => window.removeEventListener('conference-graph-reset', onReset);
+  }, []);
 
   const toggleDone = (step: number): void => {
     setDone((prev) => {
       const next = new Set(prev);
-      if (next.has(step)) next.delete(step);
-      else next.add(step);
+      if (next.has(step)) {
+        next.delete(step);
+        persistentWalkthroughDone.delete(step);
+      } else {
+        next.add(step);
+        persistentWalkthroughDone.add(step);
+      }
       return next;
     });
   };

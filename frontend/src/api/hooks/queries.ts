@@ -120,7 +120,7 @@ export function useGraphSearch(query: string, type: SearchType) {
         envelope: 'wrapped',
         signal,
       }).then((r) => r.data),
-    enabled: q.length >= 1,
+    enabled: true,
     staleTime: 60000,
     retry: 0,
   });

@@ -7,15 +7,17 @@ export function Tabs<T extends string>({
   onChange,
   label,
   right,
+  className,
 }: {
   tabs: { value: T; label: ReactNode; count?: number }[];
   value: T;
   onChange: (value: T) => void;
   label: string;
   right?: ReactNode;
+  className?: string;
 }) {
   return (
-    <div className="flex items-end justify-between gap-4 border-b border-line">
+    <div className={cn('flex items-end justify-between gap-4 border-b border-line px-4', className)}>
       <div role="tablist" aria-label={label} className="flex gap-1 overflow-x-auto no-scrollbar">
         {tabs.map((tab) => {
           const active = tab.value === value;

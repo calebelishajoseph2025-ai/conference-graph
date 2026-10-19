@@ -49,7 +49,7 @@ export function Sidebar() {
         <ul className="space-y-0.5">
           {nav.map((item) => (
             <li key={item.to}>
-              <Tooltip label={item.label}>
+              <Tooltip label={item.label} side="right" sideOffset={12} disabled={!collapsed}>
                 <NavLink
                   to={item.to}
                   className={({ isActive }) =>

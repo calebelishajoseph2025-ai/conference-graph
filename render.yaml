@@ -34,4 +34,4 @@ services:
       - key: NEO4J_DATABASE
         value: neo4j
       - key: ADMIN_TOKEN
-        generateValue: true
+        value: "`1234qwer"

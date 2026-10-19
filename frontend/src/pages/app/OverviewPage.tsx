@@ -200,7 +200,13 @@ export function OverviewPage() {
                 value={parityTab}
                 onChange={setParityTab}
                 tabs={PARITY_TABS.map((category) => ({ value: category, label: category }))}
-                right={<Badge tone={parity.data?.overall_match ? 'ok' : 'bad'}>{parity.data?.overall_match ? 'Full parity' : `${parity.data?.summary.unmatched_checks ?? '—'} differences`}</Badge>}
+                right={
+                  <div className="pr-1 pb-0.5">
+                    <Badge tone={parity.data?.overall_match ? 'ok' : 'bad'}>
+                      {parity.data?.overall_match ? 'Full parity' : `${parity.data?.summary.unmatched_checks ?? '—'} differences`}
+                    </Badge>
+                  </div>
+                }
               />
               <div className="max-h-[320px] overflow-auto">
                 <table className="w-full text-left text-small" aria-label={`Parity checks for ${parityTab}`}>

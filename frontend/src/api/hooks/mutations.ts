@@ -163,6 +163,9 @@ export function useResetNeo4j() {
       }).then((r) => r.data),
     retry: 0,
     onSuccess: () => {
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new CustomEvent('conference-graph-reset'));
+      }
       void client.invalidateQueries({ queryKey: keys.parity });
       void client.invalidateQueries({ queryKey: keys.health });
       void client.invalidateQueries({ queryKey: ['papers'] });

@@ -20,7 +20,7 @@ VALID_NODE_TYPES = {
 
 @router.get("/search", dependencies=[Depends(graph_rate_limiter)])
 def search_endpoint(
-    q: str = Query(..., min_length=1, max_length=100, description="Search query string"),
+    q: str = Query("", min_length=0, max_length=100, description="Search query string"),
     type: Optional[str] = Query(None, description="Entity type: author, reviewer, or paper"),
     limit: int = Query(10, ge=1, le=20, description="Max results to return"),
 ):

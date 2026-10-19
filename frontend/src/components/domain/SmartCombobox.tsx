@@ -21,12 +21,13 @@ export function SmartCombobox({
   inputId?: string;
 }) {
   const [query, setQuery] = useState('');
-  const debounced = useDebouncedValue(query, 250);
+  const debounced = useDebouncedValue(query, 150);
   const search = useGraphSearch(debounced, kind);
-  const options: ComboOption[] =
-    debounced.length === 0
-      ? []
-      : (search.data ?? []).map((item) => ({ id: item.rawId, label: item.title, hint: item.subtitle ?? undefined }));
+  const options: ComboOption[] = (search.data ?? []).map((item) => ({
+    id: item.rawId,
+    label: item.title,
+    hint: item.subtitle ?? undefined,
+  }));
 
   return (
     <ComboBox

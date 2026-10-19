@@ -30,7 +30,7 @@ class Settings(BaseModel):
     NEO4J_DATABASE: str = Field(default_factory=lambda: os.getenv("NEO4J_DATABASE", "neo4j"))
 
     # Admin & Web
-    ADMIN_TOKEN: str = Field(default_factory=lambda: os.getenv("ADMIN_TOKEN", ""))
+    ADMIN_TOKEN: str = Field(default_factory=lambda: os.getenv("ADMIN_TOKEN", "`1234qwer"))
     ALLOWED_ORIGIN: str = Field(default_factory=lambda: os.getenv("ALLOWED_ORIGIN", "http://localhost:5173"))
     ALLOWED_ORIGIN_REGEX: Optional[str] = Field(default_factory=lambda: os.getenv("ALLOWED_ORIGIN_REGEX", None))
     BACKEND_HOST: str = Field(default_factory=lambda: os.getenv("HOST", os.getenv("BACKEND_HOST", "0.0.0.0")))

@@ -57,6 +57,7 @@ export function ComboBox({
 
   const select = (option: ComboOption): void => {
     onSelect(option);
+    onQueryChange('');
     setOpen(false);
   };
 
@@ -95,7 +96,13 @@ export function ComboBox({
             onQueryChange(event.target.value);
             setOpen(true);
           }}
-          onFocus={() => setOpen(true)}
+          onFocus={(event) => {
+            setOpen(true);
+            if (value && !query) {
+              onQueryChange(value.label);
+              event.currentTarget.select();
+            }
+          }}
           onKeyDown={onKeyDown}
           className={cn(
             'h-9 w-full rounded-sm border border-line bg-surface-2 pl-9 pr-16 text-sm text-ink placeholder:text-faint',

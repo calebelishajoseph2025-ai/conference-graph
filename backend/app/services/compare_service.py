@@ -96,18 +96,7 @@ def is_scale_available() -> Tuple[bool, str]:
     ora_ok = is_oracle_scale_available()
     if neo_ok and ora_ok:
         return True, "Scale data is ready on both Neo4j and Oracle."
-    elif neo_ok and not ora_ok:
-        return False, (
-            "Neo4j scale database is populated, but Oracle scale schema is not available. "
-            "To enable Oracle scale benchmarks, provision the scale schema and run the seed script."
-        )
-    elif not neo_ok and ora_ok:
-        return False, (
-            "Oracle scale schema is populated, but Neo4j scale database is not ready. "
-            "Run the scale seed script to initialize Neo4j scale data."
-        )
-    else:
-        return False, "Scale benchmark dataset is not yet initialized."
+    return False, "Scale benchmark dataset is not provisioned on this environment."
 
 
 def get_dataset_availability() -> Dict[str, Any]:
@@ -118,8 +107,6 @@ def get_dataset_availability() -> Dict[str, Any]:
         "scale": {
             "available": scale_ok,
             "reason": reason,
-            "neo4j_scale_db": settings.NEO4J_SCALE_DATABASE,
-            "oracle_scale_user": settings.ORACLE_SCALE_USER,
         },
     }
 
@@ -144,7 +131,7 @@ def get_dataset_stats(dataset: str = "demo") -> Dict[str, Any]:
         if not scale_ok:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
-                detail=f"Scale dataset has not been seeded yet. {reason}",
+                detail="Scale dataset has not been provisioned on this environment.",
             )
 
         # Query Oracle scale

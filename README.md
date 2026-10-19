@@ -14,7 +14,7 @@ An interactive full-stack academic conference management dashboard designed to d
 - **Operating System:** Windows 11 (PowerShell)
 - **Python:** Python 3.12 (`py -3.12 -m venv .venv`)
 - **Node.js:** Node.js v18+ and npm
-- **Oracle Database:** Oracle AI Database 26ai Free (Service: `FREEPDB1`, Port `1521`, User: `academic`, Password: `123456`)
+- **Oracle Database:** Oracle AI Database 26ai Free (Service: `FREEPDB1`, Port `1521`, User: `academic`, Password: `<your-oracle-password>`)
 - **Neo4j Database:** Neo4j Desktop 2.x (Database: `neo4j`, Bolt URI: `bolt://127.0.0.1:7687`, User: `neo4j`)
 
 ---
@@ -47,7 +47,7 @@ Copy-Item .env.example .env
    ```sql
    @data/oracle_setup/00_create_user.sql
    ```
-2. Connect as `academic` (password `123456`) in `FREEPDB1`. From inside `data/oracle_setup`:
+2. Connect as `academic` (with configured password) in `FREEPDB1`. From inside `data/oracle_setup`:
    ```sql
    @setup_all.sql
    ```
@@ -73,7 +73,7 @@ To prepare for high-volume benchmark testing on synthetic data (e.g. 20,000 auth
    ```sql
    @data/oracle_setup/02_create_scale_user.sql
    ```
-2. Connect as `academic_scale` (password `ScalePass_2026`) and run `01_schema.sql` to build the empty relational tables.
+2. Connect as `academic_scale` (with your configured scale password) and run `01_schema.sql` to build the empty relational tables.
 3. Once the database target is ready, run the synthetic scale seeder:
    ```powershell
    $env:PYTHONPATH="backend"
@@ -153,7 +153,7 @@ cd ..
 | :--- | :--- | :--- |
 | **Neo4j connection refused** | Bolt listening on IPv6 localhost or service stopped | Ensure `NEO4J_URI=bolt://127.0.0.1:7687` (use IP `127.0.0.1`, not `localhost`). Check if instance is started in Neo4j Desktop. |
 | **Oracle ORA-12514 / ORA-12541** | Service name or listener mismatch | Confirm DSN is `localhost:1521/FREEPDB1`. Listener must be active on port `1521`. |
-| **Oracle ORA-01017: invalid username/password** | Connecting as wrong user | Ensure connecting as `academic` (password `123456`) and not `SYSTEM`. Tables live in the `academic` schema. |
+| **Oracle ORA-01017: invalid username/password** | Connecting as wrong user | Ensure connecting as `academic` (with the password configured during user creation) and not `SYSTEM`. Tables live in the `academic` schema. |
 | **HTTP 403 on `/api/admin/reset-neo4j`** | Missing or invalid admin token | Supply header `X-Admin-Token: <ADMIN_TOKEN>` matching `.env`. Configure the token in the frontend via the top-bar key icon. |
 | **HTTP 429 Too Many Requests** | Rate limit triggered | Analytics endpoints (`collab-path`, `within-hops`) have an in-memory rate limiter of 60 req/min per IP to prevent accidental browser traversal denial-of-service. |
 | **Oracle Recursive CTE ORA-32044** | Cycle loop in recursive query | In Oracle 26ai, always include `CYCLE author_id SET is_cycle TO 'Y' DEFAULT 'N'` when executing recursive subquery factoring over cyclic graphs. |
@@ -309,7 +309,7 @@ You can verify server hardening manually using `curl.exe`:
 1. **Small Demo Dataset Performance Parity:** On the demo dataset (150 authors, 110 papers, 301 co-author pairs), execution time differences between Oracle and Neo4j are in the single-digit milliseconds. Graph traversal advantages emerge distinctly as dataset size scales (addressed by the Phase 6b synthetic scale feature).
 2. **Single-Node Deployment:** Both databases and backend run locally on a single workstation. Distributed clustering, sharding, and high-availability failover are not covered in this university evaluation demo.
 3. **In-Memory Rate Limiting:** The API client rate limiter (60 req/min) uses an in-memory sliding window per IP. Restarting the backend process clears active request counts.
-4. **Weak Oracle Password (`123456`):** The Oracle user `academic` was pre-created for academic assignment evaluation with a known default password. The backend treats Oracle as local-only, never publishes the Oracle port externally, and never returns or logs credentials.
+4. **Default Oracle Passwords:** For local development and academic evaluation, default credentials should be replaced with strong, non-default passwords in production environments. The backend treats Oracle as internal, never publishes the Oracle port externally, and never returns or logs credentials.
 5. **Session-Only Admin Authentication:** There is no multi-user role-based access control (RBAC) system; administrative authorization relies on a single shared pre-shared key (`ADMIN_TOKEN`).
 
 ---

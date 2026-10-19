@@ -69,11 +69,11 @@ export function EvidenceBlock() {
           </div>
 
           <div>
-            <p className="text-caption text-faint">Raw endpoints</p>
-            <div className="mt-1.5 flex flex-wrap gap-x-3 gap-y-1 font-mono text-[11px]">
-              <a href="/api/health" target="_blank" rel="noreferrer" className="text-muted underline underline-offset-4 hover:text-ink">/api/health</a>
-              <a href="/api/admin/parity" target="_blank" rel="noreferrer" className="text-muted underline underline-offset-4 hover:text-ink">/api/admin/parity</a>
-              <a href="/api/compare/dataset-status" target="_blank" rel="noreferrer" className="text-muted underline underline-offset-4 hover:text-ink">/api/compare/dataset-status</a>
+            <p className="text-caption text-faint">API Contract Endpoints</p>
+            <div className="mt-1.5 flex flex-wrap gap-x-3 gap-y-1 font-mono text-[11px] text-muted">
+              <span className="rounded bg-surface-2 px-1.5 py-0.5">/api/health</span>
+              <span className="rounded bg-surface-2 px-1.5 py-0.5">/api/admin/parity</span>
+              <span className="rounded bg-surface-2 px-1.5 py-0.5">/api/compare/dataset-status</span>
             </div>
           </div>
         </div>

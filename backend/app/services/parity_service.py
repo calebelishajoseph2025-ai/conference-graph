@@ -188,7 +188,7 @@ def get_parity_comparison() -> Dict[str, Any]:
             "unmatched_checks": sum(1 for r in rows if not r["match"]),
         },
         "rows": rows,
-        "note": "Differences after demo writes are expected. Reset Neo4j (plus re-running data/oracle_load.sql if Oracle was written) restores the baseline.",
+        "note": "Differences after demo writes are expected. Running database reload restores the baseline.",
         "meta": {
             "engine": "both",
             "neo4j_elapsed_ms": round(neo_elapsed_ms, 2),

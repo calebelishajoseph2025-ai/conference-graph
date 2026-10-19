@@ -1,6 +1,10 @@
 import { describe, expect, it } from 'vitest';
 import {
+  formatDatabaseName,
   formatDate,
+  formatDeployment,
+  formatEngine,
+  formatSchemaUser,
   initials,
   ms,
   num,
@@ -59,6 +63,23 @@ describe('format.test.ts: Display and text formatting helpers', () => {
     expect(initials('Emma Krishnan')).toBe('EK');
     expect(initials('Yuki')).toBe('Y');
     expect(initials('Single')).toBe('S');
+  });
+
+  it('abstracts infrastructure and connection details safely', () => {
+    expect(formatDeployment(null)).toBe('Graph Database');
+    expect(formatDeployment('neo4j+s://978b0364.databases.neo4j.io')).toBe('Neo4j AuraDB (Cloud)');
+    expect(formatDeployment('bolt://127.0.0.1:7687')).toBe('Neo4j Desktop (Local)');
+
+    expect(formatDatabaseName(null)).toBe('Production Graph');
+    expect(formatDatabaseName('978b0364')).toBe('Production Graph');
+    expect(formatDatabaseName('neo4j')).toBe('Production Graph');
+
+    expect(formatEngine(null)).toBe('Relational Database');
+    expect(formatEngine('embedded://data/*.csv')).toBe('Oracle In-Memory Engine');
+    expect(formatEngine('localhost:1521/FREEPDB1')).toBe('Oracle AI Database 26ai (Local)');
+
+    expect(formatSchemaUser(null)).toBe('Conference Schema');
+    expect(formatSchemaUser('academic')).toBe('Conference Schema');
   });
 });
 

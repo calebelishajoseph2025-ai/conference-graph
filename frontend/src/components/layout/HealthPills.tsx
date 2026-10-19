@@ -3,6 +3,12 @@ import { Database, Network } from 'lucide-react';
 import { useHealth } from '@/api/hooks/queries';
 import { Tooltip } from '@/components/ui/Tooltip';
 import { cn } from '@/lib/cn';
+import {
+  formatDatabaseName,
+  formatDeployment,
+  formatEngine,
+  formatSchemaUser,
+} from '@/lib/format';
 
 function statusText(value: string | undefined): string {
   if (!value) return 'Checking';
@@ -46,13 +52,13 @@ export function HealthPills() {
         label="Neo4j"
         status={health.isError ? 'unreachable' : neo4j?.status}
         icon={<Network size={13} strokeWidth={1.5} />}
-        detail={neo4j ? `${neo4j.uri} · database ${neo4j.database}` : 'Neo4j status'}
+        detail={neo4j ? `${formatDeployment(neo4j.uri)} · ${formatDatabaseName(neo4j.database)}` : 'Neo4j status'}
       />
       <Pill
         label="Oracle"
         status={health.isError ? 'unreachable' : oracle?.status}
         icon={<Database size={13} strokeWidth={1.5} />}
-        detail={oracle ? `${oracle.dsn} · user ${oracle.user}` : 'Oracle status'}
+        detail={oracle ? `${formatEngine(oracle.dsn)} · ${formatSchemaUser(oracle.user)}` : 'Oracle status'}
       />
     </div>
   );

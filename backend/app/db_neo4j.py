@@ -73,6 +73,23 @@ def query_cypher(
     return records, elapsed_ms
 
 
+def _abstract_neo4j_uri(raw_uri: str) -> str:
+    """Safely abstracts raw Neo4j connection URI to prevent infrastructure exposure."""
+    if not raw_uri:
+        return "Neo4j Graph Database"
+    raw_lower = raw_uri.lower()
+    if "databases.neo4j.io" in raw_lower or "+s" in raw_lower or "aura" in raw_lower:
+        return "Neo4j AuraDB (Cloud)"
+    if "127.0.0.1" in raw_lower or "localhost" in raw_lower:
+        return "Neo4j Desktop (Local)"
+    return "Neo4j Graph Database (Remote)"
+
+
+def _abstract_neo4j_database(raw_database: str) -> str:
+    """Safely abstracts internal database ID/name to prevent leaking AuraDB instance identifiers."""
+    return "Production Graph"
+
+
 def check_neo4j_health() -> Dict[str, Any]:
     """
     Checks Neo4j reachability and returns node, relationship, and SAME_PERSON_AS counts.
@@ -94,8 +111,8 @@ def check_neo4j_health() -> Dict[str, Any]:
         elapsed_ms = (time.perf_counter() - start) * 1000.0
         return {
             "status": "connected",
-            "uri": settings.NEO4J_URI,
-            "database": db_name,
+            "uri": _abstract_neo4j_uri(settings.NEO4J_URI),
+            "database": _abstract_neo4j_database(db_name),
             "nodes": nodes,
             "relationships": relationships,
             "same_person_as": same_person,
@@ -107,8 +124,8 @@ def check_neo4j_health() -> Dict[str, Any]:
         logger.error("Neo4j health check failed: %s", str(e))
         return {
             "status": "unreachable",
-            "uri": settings.NEO4J_URI,
-            "database": settings.NEO4J_DATABASE,
+            "uri": _abstract_neo4j_uri(settings.NEO4J_URI),
+            "database": _abstract_neo4j_database(settings.NEO4J_DATABASE),
             "nodes": 0,
             "relationships": 0,
             "same_person_as": 0,

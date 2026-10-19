@@ -13,7 +13,14 @@ import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { useSession } from '@/session/SessionProvider';
 import { useToast } from '@/components/ui/Toast';
-import { ms, num } from '@/lib/format';
+import {
+  formatDatabaseName,
+  formatDeployment,
+  formatEngine,
+  formatSchemaUser,
+  ms,
+  num,
+} from '@/lib/format';
 
 export function AdminPage() {
   const health = useHealth();
@@ -56,11 +63,18 @@ export function AdminPage() {
 
       <div className="grid gap-4 xl:grid-cols-2">
         <Card>
-          <CardHeader title="Neo4j" description={neo4j?.database ?? 'Graph database'} actions={<Badge tone={neo4j?.status === 'connected' ? 'ok' : 'bad'}>{neo4j?.status ?? 'checking'}</Badge>} />
+          <CardHeader
+            title="Neo4j"
+            description={formatDatabaseName(neo4j?.database)}
+            actions={<Badge tone={neo4j?.status === 'connected' ? 'ok' : 'bad'}>{neo4j?.status ?? 'checking'}</Badge>}
+          />
           <CardBody>
             {health.isLoading ? <Skeleton className="h-32" /> : neo4j ? (
               <dl className="grid grid-cols-2 gap-3 text-small">
-                <div className="col-span-2"><dt className="text-caption text-faint">URI</dt><dd className="mt-0.5 break-all font-mono text-[11px] text-muted">{neo4j.uri}</dd></div>
+                <div className="col-span-2">
+                  <dt className="text-caption text-faint">Deployment</dt>
+                  <dd className="mt-0.5 break-all font-mono text-[11px] text-muted">{formatDeployment(neo4j.uri)}</dd>
+                </div>
                 <div><dt className="text-caption text-faint">Nodes</dt><dd className="mt-0.5 text-[20px] text-ink tabular">{num(neo4j.nodes)}</dd></div>
                 <div><dt className="text-caption text-faint">Relationships</dt><dd className="mt-0.5 text-[20px] text-ink tabular">{num(neo4j.relationships)}</dd></div>
                 <div><dt className="text-caption text-faint">SAME_PERSON_AS</dt><dd className="mt-0.5 text-[20px] text-ink tabular">{num(neo4j.same_person_as)}</dd></div>
@@ -72,11 +86,18 @@ export function AdminPage() {
         </Card>
 
         <Card>
-          <CardHeader title="Oracle AI Database 26ai" description={oracle?.user ?? 'Relational database'} actions={<Badge tone={oracle?.status === 'connected' ? 'ok' : 'bad'}>{oracle?.status ?? 'checking'}</Badge>} />
+          <CardHeader
+            title="Oracle AI Database 26ai"
+            description={formatSchemaUser(oracle?.user)}
+            actions={<Badge tone={oracle?.status === 'connected' ? 'ok' : 'bad'}>{oracle?.status ?? 'checking'}</Badge>}
+          />
           <CardBody>
             {health.isLoading ? <Skeleton className="h-32" /> : oracle ? (
               <dl className="grid grid-cols-2 gap-3 text-small">
-                <div className="col-span-2"><dt className="text-caption text-faint">DSN</dt><dd className="mt-0.5 break-all font-mono text-[11px] text-muted">{oracle.dsn}</dd></div>
+                <div className="col-span-2">
+                  <dt className="text-caption text-faint">Engine</dt>
+                  <dd className="mt-0.5 break-all font-mono text-[11px] text-muted">{formatEngine(oracle.dsn)}</dd>
+                </div>
                 <div><dt className="text-caption text-faint">Rows</dt><dd className="mt-0.5 text-[20px] text-ink tabular">{num(oracle.total_rows)}</dd></div>
                 <div><dt className="text-caption text-faint">Tables</dt><dd className="mt-0.5 text-[20px] text-ink tabular">{Object.keys(oracle.tables).length}</dd></div>
                 <div className="col-span-2"><dt className="text-caption text-faint">Latency</dt><dd className="mt-0.5 font-mono text-[12px] text-muted">{ms(oracle.elapsed_ms)}</dd></div>

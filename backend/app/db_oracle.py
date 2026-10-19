@@ -431,6 +431,21 @@ def query_oracle(
     return rows, elapsed_ms
 
 
+def _abstract_oracle_dsn(raw_dsn: str, is_embedded: bool) -> str:
+    """Safely abstracts raw Oracle DSN / internal filesystem paths."""
+    if is_embedded:
+        return "Oracle In-Memory Engine"
+    raw_lower = (raw_dsn or "").lower()
+    if "localhost" in raw_lower or "127.0.0.1" in raw_lower or "1521" in raw_lower:
+        return "Oracle AI Database 26ai (Local)"
+    return "Oracle AI Database 26ai (Cloud)"
+
+
+def _abstract_oracle_user(raw_user: str) -> str:
+    """Safely abstracts database credentials / usernames."""
+    return "Conference Schema"
+
+
 def check_oracle_health() -> Dict[str, Any]:
     """
     Checks Oracle reachability and returns row counts for all application tables.
@@ -449,13 +464,13 @@ def check_oracle_health() -> Dict[str, Any]:
                     total_rows += cnt
 
         elapsed_ms = (time.perf_counter() - start) * 1000.0
-        mode = "embedded" if _pool is None else "oracle"
-        dsn = "embedded://data/*.csv" if _pool is None else settings.ORACLE_DSN
+        is_embedded = _pool is None
+        mode = "embedded" if is_embedded else "oracle"
         return {
             "status": "connected",
             "mode": mode,
-            "dsn": dsn,
-            "user": settings.ORACLE_USER,
+            "dsn": _abstract_oracle_dsn(settings.ORACLE_DSN, is_embedded),
+            "user": _abstract_oracle_user(settings.ORACLE_USER),
             "tables": counts,
             "total_rows": total_rows,
             "elapsed_ms": round(elapsed_ms, 2),
@@ -466,10 +481,10 @@ def check_oracle_health() -> Dict[str, Any]:
         logger.error("Oracle health check failed: %s", str(e))
         return {
             "status": "unreachable",
-            "dsn": settings.ORACLE_DSN,
-            "user": settings.ORACLE_USER,
+            "dsn": _abstract_oracle_dsn(settings.ORACLE_DSN, _pool is None),
+            "user": _abstract_oracle_user(settings.ORACLE_USER),
             "tables": {},
             "total_rows": 0,
             "elapsed_ms": round(elapsed_ms, 2),
-            "error": str(e),
+            "error": "Failed to connect to Oracle database",
         }

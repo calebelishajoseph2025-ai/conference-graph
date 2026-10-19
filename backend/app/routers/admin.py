@@ -56,7 +56,7 @@ def reset_neo4j_endpoint(
             "data": result,
             "meta": {
                 "engine": "neo4j",
-                "database": settings.NEO4J_DATABASE,
+                "database": "Production Graph",
                 "elapsed_ms": result["elapsed_ms"],
             },
         }

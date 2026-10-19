@@ -98,16 +98,16 @@ def is_scale_available() -> Tuple[bool, str]:
         return True, "Scale data is ready on both Neo4j and Oracle."
     elif neo_ok and not ora_ok:
         return False, (
-            f"Neo4j database '{settings.NEO4J_SCALE_DATABASE}' is populated, but Oracle user '{settings.ORACLE_SCALE_USER}' is not available. "
-            "To enable Oracle scale benchmarks, run data/oracle_setup/02_create_scale_user.sql and 01_schema.sql, then python scripts/scale_seed.py --confirm."
+            "Neo4j scale database is populated, but Oracle scale schema is not available. "
+            "To enable Oracle scale benchmarks, provision the scale schema and run the seed script."
         )
     elif not neo_ok and ora_ok:
         return False, (
-            f"Oracle user '{settings.ORACLE_SCALE_USER}' is populated, but Neo4j database '{settings.NEO4J_SCALE_DATABASE}' is not ready. "
-            "Run python scripts/scale_seed.py --confirm to seed Neo4j."
+            "Oracle scale schema is populated, but Neo4j scale database is not ready. "
+            "Run the scale seed script to initialize Neo4j scale data."
         )
     else:
-        return False, "Run scripts/scale_seed.py --confirm to generate scale data."
+        return False, "Scale benchmark dataset is not yet initialized."
 
 
 def get_dataset_availability() -> Dict[str, Any]:

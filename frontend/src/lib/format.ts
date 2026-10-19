@@ -48,3 +48,41 @@ export function initials(name: string): string {
     .map((part) => part.charAt(0).toUpperCase())
     .join('');
 }
+
+export function formatDeployment(rawUri: string | null | undefined): string {
+  if (!rawUri || rawUri === '—') return 'Graph Database';
+  const lower = rawUri.toLowerCase();
+  if (lower.includes('auradb') || lower.includes('databases.neo4j.io') || lower.includes('+s') || lower.includes('cloud')) {
+    return 'Neo4j AuraDB (Cloud)';
+  }
+  if (lower.includes('127.0.0.1') || lower.includes('localhost') || lower.includes('desktop')) {
+    return 'Neo4j Desktop (Local)';
+  }
+  return 'Neo4j Graph Database';
+}
+
+export function formatDatabaseName(rawDb: string | null | undefined): string {
+  if (!rawDb || rawDb === '—') return 'Production Graph';
+  if (/^[0-9a-f]{8,}$/i.test(rawDb) || rawDb.length > 20) {
+    return 'Production Graph';
+  }
+  return rawDb === 'neo4j' ? 'Production Graph' : rawDb;
+}
+
+export function formatEngine(rawDsn: string | null | undefined): string {
+  if (!rawDsn || rawDsn === '—') return 'Relational Database';
+  const lower = rawDsn.toLowerCase();
+  if (lower.includes('embedded') || lower.includes('csv') || lower.includes('in-memory')) {
+    return 'Oracle In-Memory Engine';
+  }
+  if (lower.includes('127.0.0.1') || lower.includes('localhost') || lower.includes('1521')) {
+    return 'Oracle AI Database 26ai (Local)';
+  }
+  return 'Oracle AI Database 26ai (Cloud)';
+}
+
+export function formatSchemaUser(rawUser: string | null | undefined): string {
+  if (!rawUser || rawUser === '—') return 'Conference Schema';
+  return 'Conference Schema';
+}
+

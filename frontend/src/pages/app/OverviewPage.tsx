@@ -18,7 +18,17 @@ import { AddPaperDialog } from '@/components/domain/AddPaperDialog';
 import type { PaperListItem } from '@/api/schemas/papers';
 import { useSession } from '@/session/SessionProvider';
 import { can } from '@/session/personas';
-import { formatDate, ms, num, score, truncate } from '@/lib/format';
+import {
+  formatDatabaseName,
+  formatDate,
+  formatDeployment,
+  formatEngine,
+  formatSchemaUser,
+  ms,
+  num,
+  score,
+  truncate,
+} from '@/lib/format';
 
 const STATUS_ORDER = ['Accepted', 'Rejected', 'Under Review', 'Submitted'];
 const PARITY_TABS = ['All', 'Nodes', 'Relationships', 'Paper Status', 'Review Metrics'];
@@ -101,7 +111,11 @@ export function OverviewPage() {
             <Card>
               <CardHeader
                 title="Neo4j"
-                description={health.isLoading ? 'Checking the graph database…' : `${health.data?.neo4j.uri ?? '—'} · ${health.data?.neo4j.database ?? '—'}`}
+                description={
+                  health.isLoading
+                    ? 'Checking the graph database…'
+                    : `${formatDeployment(health.data?.neo4j.uri)} · ${formatDatabaseName(health.data?.neo4j.database)}`
+                }
                 actions={<Badge tone={health.data?.neo4j.status === 'connected' ? 'ok' : 'bad'}>{health.data?.neo4j.status ?? 'checking'}</Badge>}
               />
               <CardBody>
@@ -122,7 +136,11 @@ export function OverviewPage() {
             <Card>
               <CardHeader
                 title="Oracle AI Database 26ai"
-                description={health.isLoading ? 'Checking the relational database…' : `${health.data?.oracle.dsn ?? '—'} · ${health.data?.oracle.user ?? '—'}`}
+                description={
+                  health.isLoading
+                    ? 'Checking the relational database…'
+                    : `${formatEngine(health.data?.oracle.dsn)} · ${formatSchemaUser(health.data?.oracle.user)}`
+                }
                 actions={<Badge tone={health.data?.oracle.status === 'connected' ? 'ok' : 'bad'}>{health.data?.oracle.status ?? 'checking'}</Badge>}
               />
               <CardBody>
